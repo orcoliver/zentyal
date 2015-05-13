@@ -1,3 +1,12 @@
+HEAD
+	+ Configuration for openchange notifications with dovecot plugin
+	+ Delete obsolete cron file when upgrading from 4.0
+4.1.3
+	+ Remove deprecated bridged mode condition
+4.1.2
+	+ Add integration with zentyal-antivirus
+4.1.1
+	+ Remove wrong Synchronization broken link in the menu
 4.1
 	+ Remove deprecated OpenChange notifications settings in smb.conf
 	+ Disable administrator account expiration on provision

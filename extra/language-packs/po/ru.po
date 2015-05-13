@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: zentyal 3.0\n"
 "Report-Msgid-Bugs-To: developers@zentyal.org\n"
 "POT-Creation-Date: 2012-08-07 18:26+0200\n"
-"PO-Revision-Date: 2015-03-02 10:59+0200\n"
-"Last-Translator: kuzmult <kilite@mail.ru>\n"
+"PO-Revision-Date: 2015-04-13 11:10+0200\n"
+"Last-Translator: bankaman <bankastudio@gmail.com>\n"
 "Language-Team: zentyal-i18n@lists.zentyal.org\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,7 @@ msgstr ""
 "X-Generator: Pootle 2.1.6\n"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Types/TlsRemote.pm:53
+#: ../../main/mail/src/EBox/Mail.pm:1565
 msgid "disabled"
 msgstr "отключено"
 
@@ -144,7 +145,7 @@ msgid "Client {name}"
 msgstr "Клиент {name}"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:554
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:891
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:890
 #: ../../main/openvpn/src/EBox/OpenVPN/Model/Servers.pm:60
 #: ../../main/core/src/EBox/RemoteServices/Model/QAUpdatesInfo.pm:91
 #: ../../main/core/src/EBox/Logs/Model/ConfigureLogs.pm:351
@@ -159,7 +160,8 @@ msgid "Enabled"
 msgstr "Включено"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:554
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:891
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:890
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:85
 #: ../../main/core/src/EBox/RemoteServices/Model/QAUpdatesInfo.pm:86
 #: ../../main/core/src/EBox/SysInfo.pm:480
 #: ../../main/core/src/EBox/RemoteServices.pm:1306
@@ -174,7 +176,7 @@ msgid "Disabled"
 msgstr "Отключено"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:555
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:892
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:891
 #: ../../main/ca/src/EBox/CA/Model/Certificates.pm:289
 #: ../../main/firewall/src/EBox/Firewall/Model/BaseRuleTable.pm:167
 #: ../../main/firewall/src/EBox/Firewall/Model/SNAT.pm:119
@@ -182,19 +184,19 @@ msgid "Service"
 msgstr "Служба"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:557
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:894
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:893
 #: ../../main/core/src/EBox/SysInfo.pm:465
 msgid "Running"
 msgstr "Работает"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:557
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:894
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:893
 #: ../../main/core/src/EBox/SysInfo.pm:470
 msgid "Stopped"
 msgstr "Остановлена"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:558
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:895
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:894
 msgid "Daemon status"
 msgstr "Статус демона"
 
@@ -204,12 +206,12 @@ msgstr "Объект подключения"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:570
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:572
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:919
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:918
 msgid "VPN interface address"
 msgstr "адрес интерфейса VPN"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Client.pm:572
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:918
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:917
 msgid "No active"
 msgstr "Не активный"
 
@@ -247,7 +249,7 @@ msgstr ""
 "Не могу получить ключ сервера {name} т.к. он не имеет ни одного "
 "установленного сертификата"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:496
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:495
 #, perl-brace-format
 msgid ""
 "VPN server {name} couldn't be configured, no IP address found for interface "
@@ -256,45 +258,45 @@ msgstr ""
 "Невозможно настроить VPN сервер {name} так как не найден IP-адрес для "
 "интерфейса {iface}"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:618
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:617
 msgid "OpenVPN servers cannot be used for internal services"
 msgstr "OpenVPN сервера не могут быть использованы для внутренних служб"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:646
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:645
 #, perl-brace-format
 msgid "Unsupported client type: {ct}"
 msgstr "Не поддерживаемый тип клиента: {ct}"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:889
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:888
 #, perl-brace-format
 msgid "Server {name}"
 msgstr "Сервер {name}"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:900
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:899
 #: ../../main/openvpn/src/EBox/OpenVPN/Model/ServerConfiguration.pm:246
 msgid "All network interfaces"
 msgstr "Все сетевые интерфейсы"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:902
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:901
 msgid "Not found"
 msgstr "Не найдено"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:904
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:903
 msgid "Local address"
 msgstr "Локальный адрес"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:909
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:908
 #: ../../main/firewall/src/EBox/Firewall/Model/RedirectsTable.pm:305
 #: ../../main/mail/src/EBox/Mail/CGI/AddExternalAccount.pm:43
 #: ../../main/mail/src/templates/externalAccounts.mas:16
 msgid "Port"
 msgstr "Порт"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:912
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:911
 msgid "VPN subnet"
 msgstr "VPN-подсеть"
 
-#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:915
+#: ../../main/openvpn/src/EBox/OpenVPN/Server.pm:914
 msgid "VPN network interface"
 msgstr "VPN сетевой интерфейс"
 
@@ -956,6 +958,7 @@ msgid "Common name"
 msgstr "Каноническое имя"
 
 #: ../../main/openvpn/src/EBox/OpenVPN.pm:1314
+#: ../../main/mail/src/EBox/Mail.pm:1582
 msgid "Address"
 msgstr "Адрес"
 
@@ -973,11 +976,16 @@ msgstr "Демоны OpenVPN"
 
 #: ../../main/openvpn/src/EBox/OpenVPN.pm:1479
 #: ../../main/printers/src/EBox/Printers.pm:396
-#: ../../main/dhcp/src/EBox/DHCP.pm:977
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:62
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:432
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:475
+#: ../../main/dhcp/src/EBox/DHCP.pm:979
 #: ../../main/core/src/EBox/SysInfo/Model/DateTime.pm:51
-#: ../../main/firewall/src/EBox/Firewall.pm:786
-#: ../../main/samba/src/EBox/Samba.pm:3076
-#: ../../main/mail/src/EBox/Mail.pm:1597
+#: ../../main/firewall/src/EBox/Firewall.pm:787
+#: ../../main/samba/src/EBox/Samba.pm:3217
+#: ../../main/samba/src/EBox/Samba.pm:3237
+#: ../../main/samba/src/EBox/Samba.pm:3248
+#: ../../main/mail/src/EBox/Mail.pm:1679
 #: ../../main/ca/src/templates/index.mas:99
 #: ../../main/core/src/templates/finish.mas:32
 #: ../../main/core/src/templates/remoteservices/Backup/index.mas:189
@@ -990,15 +998,18 @@ msgstr "Дата"
 
 #: ../../main/openvpn/src/EBox/OpenVPN.pm:1480
 #: ../../main/printers/src/EBox/Printers.pm:397
-#: ../../main/dhcp/src/EBox/DHCP.pm:981
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:434
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:478
+#: ../../main/dhcp/src/EBox/DHCP.pm:983
 #: ../../main/core/src/EBox/AuditLogging.pm:116
 #: ../../main/core/src/EBox/AuditLogging.pm:145
-#: ../../main/mail/src/EBox/Mail.pm:1607
+#: ../../main/mail/src/EBox/Mail.pm:1689
 msgid "Event"
 msgstr "Событие"
 
 #: ../../main/openvpn/src/EBox/OpenVPN.pm:1482
 #: ../../main/firewall/src/EBox/Firewall/Model/EBoxServicesRuleTable.pm:133
+#: ../../main/samba/src/EBox/Samba.pm:3242
 #: ../../main/core/src/templates/report/diskUsage.mas:63
 #: ../../main/core/src/templates/report/raid.mas:127
 #: ../../main/core/src/templates/remoteservices/index.mas:67
@@ -1118,7 +1129,7 @@ msgstr "имя узла"
 
 #: ../../main/dns/src/EBox/DNS.pm:1694
 #: ../../main/dns/src/EBox/DNS/Model/AliasTable.pm:204
-#: ../../main/samba/src/EBox/Samba.pm:2598
+#: ../../main/samba/src/EBox/Samba.pm:2633
 msgid "alias"
 msgstr "псевдоним"
 
@@ -1144,34 +1155,29 @@ msgstr "IP-адрес"
 #: ../../main/network/src/EBox/Network/Model/GatewayTable.pm:173
 #: ../../main/network/src/EBox/Network/Model/DNSResolver.pm:110
 #: ../../main/network/src/EBox/Network/Model/SearchDomain.pm:76
-#: ../../main/network/src/EBox/Network.pm:1074
-#: ../../main/network/src/EBox/Network.pm:1106
-#: ../../main/network/src/EBox/Network.pm:1191
-#: ../../main/network/src/EBox/Network.pm:1227
-#: ../../main/network/src/EBox/Network.pm:1255
-#: ../../main/network/src/EBox/Network.pm:1342
-#: ../../main/network/src/EBox/Network.pm:1522
-#: ../../main/network/src/EBox/Network.pm:1751
-#: ../../main/network/src/EBox/Network.pm:1830
-#: ../../main/network/src/EBox/Network.pm:1870
-#: ../../main/network/src/EBox/Network.pm:1897
-#: ../../main/network/src/EBox/Network.pm:1924
-#: ../../main/network/src/EBox/Network.pm:1955
-#: ../../main/network/src/EBox/Network.pm:2000
-#: ../../main/network/src/EBox/Network.pm:2033
-#: ../../main/network/src/EBox/Network.pm:3033
-#: ../../main/network/src/EBox/Network.pm:3072
-#: ../../main/network/src/EBox/Network.pm:3096
-#: ../../main/network/src/EBox/Network.pm:3117
-#: ../../main/network/src/EBox/Network.pm:3146
-#: ../../main/network/src/EBox/Network.pm:3205
-#: ../../main/network/src/EBox/Network.pm:3228
-#: ../../main/network/src/EBox/Network.pm:3251
-#: ../../main/dhcp/src/EBox/DHCP.pm:347 ../../main/dhcp/src/EBox/DHCP.pm:383
-#: ../../main/dhcp/src/EBox/DHCP.pm:433 ../../main/dhcp/src/EBox/DHCP.pm:479
-#: ../../main/dhcp/src/EBox/DHCP.pm:524 ../../main/dhcp/src/EBox/DHCP.pm:620
-#: ../../main/dhcp/src/EBox/DHCP.pm:673 ../../main/dhcp/src/EBox/DHCP.pm:733
-#: ../../main/dhcp/src/EBox/DHCP.pm:978
+#: ../../main/network/src/EBox/Network.pm:1026
+#: ../../main/network/src/EBox/Network.pm:1058
+#: ../../main/network/src/EBox/Network.pm:1143
+#: ../../main/network/src/EBox/Network.pm:1179
+#: ../../main/network/src/EBox/Network.pm:1207
+#: ../../main/network/src/EBox/Network.pm:1294
+#: ../../main/network/src/EBox/Network.pm:1474
+#: ../../main/network/src/EBox/Network.pm:1703
+#: ../../main/network/src/EBox/Network.pm:1776
+#: ../../main/network/src/EBox/Network.pm:1811
+#: ../../main/network/src/EBox/Network.pm:1846
+#: ../../main/network/src/EBox/Network.pm:1879
+#: ../../main/network/src/EBox/Network.pm:2865
+#: ../../main/network/src/EBox/Network.pm:2904
+#: ../../main/network/src/EBox/Network.pm:2928
+#: ../../main/network/src/EBox/Network.pm:2979
+#: ../../main/network/src/EBox/Network.pm:3002
+#: ../../main/network/src/EBox/Network.pm:3025
+#: ../../main/dhcp/src/EBox/DHCP.pm:349 ../../main/dhcp/src/EBox/DHCP.pm:385
+#: ../../main/dhcp/src/EBox/DHCP.pm:435 ../../main/dhcp/src/EBox/DHCP.pm:481
+#: ../../main/dhcp/src/EBox/DHCP.pm:526 ../../main/dhcp/src/EBox/DHCP.pm:622
+#: ../../main/dhcp/src/EBox/DHCP.pm:675 ../../main/dhcp/src/EBox/DHCP.pm:735
+#: ../../main/dhcp/src/EBox/DHCP.pm:980
 #: ../../main/dhcp/src/EBox/DHCP/Model/Interfaces.pm:124
 #: ../../main/firewall/src/EBox/Firewall/Model/RedirectsTable.pm:225
 #: ../../main/common/src/EBox/NetWrappers.pm:121
@@ -1186,13 +1192,13 @@ msgstr "Интерфейс"
 #: ../../main/network/src/EBox/Network/CGI/VIface.pm:65
 #: ../../main/network/src/EBox/Network/Model/GatewayTable.pm:166
 #: ../../main/network/src/EBox/Network/Model/GatewayTable.pm:253
-#: ../../main/network/src/EBox/Network.pm:974
-#: ../../main/network/src/EBox/Network.pm:1345
-#: ../../main/network/src/EBox/Network.pm:3036
-#: ../../main/network/src/EBox/Network.pm:3070
-#: ../../main/network/src/EBox/Network.pm:3439
+#: ../../main/network/src/EBox/Network.pm:926
+#: ../../main/network/src/EBox/Network.pm:1297
+#: ../../main/network/src/EBox/Network.pm:2868
+#: ../../main/network/src/EBox/Network.pm:2902
+#: ../../main/network/src/EBox/Network.pm:3213
 #: ../../main/objects/src/EBox/Objects/Model/MemberTable.pm:64
-#: ../../main/dhcp/src/EBox/DHCP.pm:1070
+#: ../../main/dhcp/src/EBox/DHCP.pm:1079
 #: ../../main/network/src/templates/wizard/network.mas:47
 #: ../../main/network/src/templates/ifaces.mas:71
 #: ../../main/network/src/templates/ifaces.mas:151
@@ -1211,7 +1217,7 @@ msgstr "Разрешить прозрачное кэширование DNS"
 #: ../../main/dns/src/EBox/DNS/Model/Settings.pm:84
 #: ../../main/software/src/EBox/Software.pm:670
 #: ../../main/samba/src/EBox/Samba/Model/DomainSettings.pm:199
-#: ../../main/samba/src/EBox/Samba.pm:1900
+#: ../../main/samba/src/EBox/Samba.pm:1938
 #: ../../main/mail/src/EBox/Mail/Model/VDomains.pm:66
 #: ../../main/software/src/templates/config.mas:14
 msgid "Settings"
@@ -1256,7 +1262,7 @@ msgstr "Имя службы"
 
 #: ../../main/dns/src/EBox/DNS/Model/Services.pm:137
 #: ../../main/firewall/src/EBox/Firewall/Model/RedirectsTable.pm:256
-#: ../../main/firewall/src/EBox/Firewall.pm:791
+#: ../../main/firewall/src/EBox/Firewall.pm:792
 #: ../../main/mail/src/EBox/Mail/CGI/AddExternalAccount.pm:42
 #: ../../main/services/src/EBox/Services/Model/ServiceConfigurationTable.pm:144
 #: ../../main/mail/src/templates/externalAccounts.mas:18
@@ -1313,6 +1319,7 @@ msgstr "Этот домен"
 #: ../../main/dhcp/src/EBox/DHCP/Model/Options.pm:383
 #: ../../main/dhcp/src/EBox/DHCP/Model/Options.pm:397
 #: ../../main/dhcp/src/EBox/DHCP/Model/DynamicDNS.pm:240
+#: ../../main/mail/src/EBox/Mail.pm:1580
 msgid "Custom"
 msgstr "Пользовательский"
 
@@ -1371,9 +1378,9 @@ msgstr "В этом домене уже существует псевдоним 
 #: ../../main/dns/src/EBox/DNS/Model/MailExchanger.pm:186
 #: ../../main/dns/src/EBox/DNS/Model/NameServer.pm:214
 #: ../../main/dns/src/EBox/DNS/Model/Text.pm:142
-#: ../../main/network/src/EBox/Network.pm:3274
-#: ../../main/network/src/EBox/Network.pm:3295
-#: ../../main/dhcp/src/EBox/DHCP.pm:1070
+#: ../../main/network/src/EBox/Network.pm:3048
+#: ../../main/network/src/EBox/Network.pm:3069
+#: ../../main/dhcp/src/EBox/DHCP.pm:1079
 #: ../../main/core/src/EBox/SysInfo/Model/HostName.pm:167
 #: ../../main/dns/src/templates/edit.mas:18
 msgid "Host name"
@@ -1405,7 +1412,7 @@ msgstr ""
 
 #: ../../main/dns/src/EBox/DNS/Model/HostnameTable.pm:214
 #: ../../main/network/src/EBox/Network/CGI/Diag.pm:79
-#: ../../main/network/src/EBox/Network.pm:3315
+#: ../../main/network/src/EBox/Network.pm:3089
 msgid "host name"
 msgstr "имя узла"
 
@@ -1464,12 +1471,13 @@ msgstr ""
 
 #: ../../main/dns/src/EBox/DNS/Model/DomainTable.pm:606
 #: ../../main/dns/src/EBox/DNS/Model/Text.pm:157
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:70
 #: ../../main/network/src/EBox/Network/Model/SearchDomain.pm:71
 #: ../../main/core/src/EBox/SysInfo/Model/HostName.pm:53
 #: ../../main/core/src/EBox/Logs/Model/SelectLog.pm:141
 #: ../../main/core/src/EBox/Logs/Model/ConfigureLogs.pm:343
 #: ../../main/samba/src/EBox/Samba/Model/DomainSettings.pm:198
-#: ../../main/samba/src/EBox/Samba.pm:1894
+#: ../../main/samba/src/EBox/Samba.pm:1932
 #: ../../main/mail/src/EBox/Mail/Model/ExternalAliases.pm:61
 msgid "Domain"
 msgstr "Домен"
@@ -1614,7 +1622,7 @@ msgstr "В этом домене уже существует узел с эти�
 #: ../../main/dns/src/EBox/DNS/Model/HostIpTable.pm:117
 #: ../../main/dns/src/EBox/DNS/Model/HostIpTable.pm:132
 #: ../../main/dns/src/EBox/DNS/Model/HostIpTable.pm:139
-#: ../../main/dhcp/src/EBox/DHCP.pm:980
+#: ../../main/dhcp/src/EBox/DHCP.pm:982
 #: ../../main/core/src/EBox/AuditLogging.pm:144
 #: ../../main/dns/src/templates/edit.mas:16
 msgid "IP"
@@ -1656,7 +1664,9 @@ msgstr "Любой контроль доступа отключается, ес�
 #: ../../main/core/src/EBox/AuditLogging.pm:113
 #: ../../main/core/src/EBox/AuditLogging.pm:143
 #: ../../main/samba/src/EBox/Samba/Model/SambaSharePermissions.pm:304
-#: ../../main/samba/src/EBox/Samba.pm:3078
+#: ../../main/samba/src/EBox/Samba.pm:3219
+#: ../../main/samba/src/EBox/Samba.pm:3239
+#: ../../main/samba/src/EBox/Samba.pm:3250
 #: ../../main/mail/src/EBox/Mail/Model/SMTPOptions.pm:99
 #: ../../main/samba/src/templates/addobject.mas:10
 #: ../../main/samba/src/templates/ajax/viewer/shareViewer.mas:8
@@ -1836,7 +1846,7 @@ msgid "Disable {server} upstart job"
 msgstr "Отключить {server} скрипт инициализации"
 
 #: ../../main/printers/src/EBox/Printers.pm:75
-#: ../../main/dhcp/src/EBox/DHCP.pm:196
+#: ../../main/dhcp/src/EBox/DHCP.pm:198
 msgid "Zentyal will take care of start and stop the service"
 msgstr "Zentyal позаботится о запуске и остановке сервиса"
 
@@ -1998,8 +2008,10 @@ msgstr "Сертификат для обновления NOT существуе�
 msgid "Certificate with this common name {cn} does NOT exist in this CA"
 msgstr "Сертификат со стандартным именем {cn} NOT существует в данном CA"
 
-#: ../../main/ca/src/EBox/CA.pm:1760 ../../main/core/src/EBox/SysInfo.pm:110
-#: ../../main/mail/src/EBox/Mail.pm:1534
+#: ../../main/ca/src/EBox/CA.pm:1760
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:100
+#: ../../main/core/src/EBox/SysInfo.pm:110
+#: ../../main/mail/src/EBox/Mail.pm:1616
 msgid "General"
 msgstr "Основные"
 
@@ -2099,13 +2111,14 @@ msgstr ""
 "а также символы: .?&+:-@* и пробелы."
 
 #: ../../main/ca/src/EBox/CA/CGI/ShowForm.pm:75
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:477
 #: ../../main/core/src/EBox/Model/DataTable.pm:1764
 #: ../../main/core/src/EBox/Model/Composite.pm:521
 #: ../../main/core/src/EBox/Model/Composite.pm:536
 #: ../../main/core/src/EBox/Model/Template.pm:154
 #: ../../main/core/src/EBox/Model/Template.pm:173
 #: ../../main/core/src/EBox/AuditLogging.pm:127
-#: ../../main/samba/src/EBox/Samba.pm:3079
+#: ../../main/samba/src/EBox/Samba.pm:3220
 #: ../../main/dns/src/templates/index.mas:22
 #: ../../main/dns/src/templates/edit.mas:20
 #: ../../main/network/src/templates/ifaces.mas:112
@@ -2291,6 +2304,707 @@ msgid ""
 "You can issue it from the {oh}OpenChange virtual domains interface.{ch}"
 msgstr ""
 
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:58
+#: ../../main/mailfilter/src/EBox/MailFilter/Amavis.pm:445
+#: ../../main/network/src/EBox/Network.pm:3202
+#: ../../main/mail/src/EBox/Mail.pm:1567 ../../main/mail/src/EBox/Mail.pm:1688
+#: ../../main/core/src/templates/report/raid.mas:100
+#: ../../main/core/src/templates/moduleStatusTable.mas:64
+#: ../../main/mail/src/templates/qmanager.mas:17
+msgid "Status"
+msgstr "Статус"
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:66
+msgid "Signatures"
+msgstr "Подписи"
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:72
+msgid "Database Update Status"
+msgstr "Статус обновления антивирусной базы"
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:73
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:77
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:398
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:403
+#: ../../main/samba/src/EBox/Samba/Composite/Antivirus.pm:59
+msgid "Antivirus"
+msgstr "Антивирус"
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:151
+msgid ""
+"The antivirus database has not been updated since the module was enabled."
+msgstr "Антивирусная база не обновлялась с момента включения модуля."
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:153
+msgid "The last update failed."
+msgstr "Последнее обновление неудачно."
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:154
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:155
+msgid "Last update successful."
+msgstr "Последнее обновление прошло успешно."
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:157
+msgid ""
+"The antivirus module is not configured. Enable it first in Module Status "
+"section."
+msgstr ""
+"Антивирусный модуль не настроен. Включите его в разделе Статус модулей."
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:160
+msgid ""
+"The antivirus module is not enabled. Enable it first to know the antivirus "
+"status."
+msgstr ""
+"Модуль антивируса не включен. Чтобы узнать статус антивируса сначала "
+"включите его."
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:162
+#, perl-brace-format
+msgid "Unknown event {event}."
+msgstr "Неизвестное событие {event}."
+
+#: ../../main/antivirus/src/EBox/AntiVirus/Model/FreshclamStatus.pm:185
+#, perl-brace-format
+msgid ""
+"Want to protect your system against scams, spear phishing, frauds and other "
+"junk? Get one of the {oh}Commercial Editions{ch} that will keep your "
+"Antvirus database always up-to-date."
+msgstr ""
+
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:169
+msgid " To configure clamd daemon"
+msgstr " Настроить демона clamd"
+
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:174
+msgid "To schedule the launch of the updater"
+msgstr "Планирование запуска обновлений"
+
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:179
+#, perl-brace-format
+msgid "Custom {app} profile configuration for {bin} binary"
+msgstr ""
+"Конфигурация пользовательского {app} профиля для {bin} бинарных приложений"
+
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:186
+#, perl-brace-format
+msgid "Disable {app} profile for {bin} binary"
+msgstr "Отключить {app} профиль для {bin} бинарных приложений"
+
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:433
+#: ../../main/firewall/src/EBox/Firewall/Model/RedirectsTable.pm:275
+#: ../../main/firewall/src/EBox/Firewall/Model/BaseRuleTable.pm:108
+#: ../../main/firewall/src/EBox/Firewall/Model/SNAT.pm:72
+#: ../../main/firewall/src/EBox/Firewall.pm:790
+msgid "Source"
+msgstr "Источник"
+
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:438
+msgid "Success"
+msgstr "Удачно"
+
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:438
+msgid "Failure"
+msgstr "Сбой"
+
+#: ../../main/antivirus/src/EBox/AntiVirus.pm:441
+msgid "Antivirus DB updates"
+msgstr "Обновления БД антивируса"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:60
+msgid "Mail Filter"
+msgstr "Почтовый фильтр"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:78
+msgid "Add clamav user to amavis group"
+msgstr "Добавить пользователя clamav в группу amavis"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:79
+msgid "Clamav need access to amavis fields to properly scan mail"
+msgstr "Clamav необходим доступ к amavis полям, чтобы сканировать почту"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:83
+msgid "Add clamav user to p3scan group"
+msgstr "Добавить пользователя clamav в группу p3scan"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:84
+msgid "Clamav need access to p3scan group to properly scan in the POP Proxy"
+msgstr "Clamav необходим доступ к p3scan полям, чтобы сканировать POP прокси"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:88
+msgid "Add spam and ham system users"
+msgstr "Добавить системных пользователей spam и ham"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:90
+msgid ""
+"This users are for the email accounts used for training the bayesian filter"
+msgstr ""
+"Эти пользователи электронной почты используются для обучения байесовского "
+"фильтра"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:95
+msgid "Update LDAP"
+msgstr "Обновить LDAP"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:96
+msgid "Add amavis specific classes and fields"
+msgstr "Добавить определенные классы и поля amavis"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:127
+msgid ""
+"Mail server has a custom filter set, unset it before enabling Zentyal Mail "
+"Filter module"
+msgstr ""
+"Почтовый сервер имеет пользовательский набор фильтров, сбросьте его прежде, "
+"чем включить модуль Zentyal Mail Filter"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:309
+msgid "Cannot proceed because the filter is in use"
+msgstr "Не воможно фильтр используется"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:455
+msgid "Mail filter"
+msgstr "Почтовый фильтр"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:480
+msgid "Sender address"
+msgstr "Адрес отправителя"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:481
+msgid "Recipient address"
+msgstr "Адрес получателя"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:483
+msgid "Spam hits"
+msgstr "Спам хиты"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:488
+msgid "Bad header found"
+msgstr "Обнаружен плохой заголовок"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:489
+msgid "Spam found"
+msgstr "Обнаружен спам"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:490
+msgid "Forbidden attached file found"
+msgstr "Обнаружен запрещенный прикрепленный файл"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:491
+msgid "Address in blacklist found"
+msgstr "Обнаружен адрес из черного списка"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:492
+msgid "Virus found"
+msgstr "Обнаружен вирус"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:493
+msgid "Clean message"
+msgstr "Чистое сообщение"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:494
+msgid "Unable to reinject in the mail server"
+msgstr "Невозможно переподключится к почтовому серверу"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:498
+msgid "SMTP filter"
+msgstr "SMTP фильтр"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:529
+#: ../../main/mailfilter/src/EBox/MailFilter/Composite/Amavis.pm:39
+msgid "SMTP Mail Filter"
+msgstr "Почтовый фильтр SMTP"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:536
+#: ../../main/mailfilter/src/EBox/MailFilter/Amavis.pm:458
+#: ../../main/mailfilter/src/EBox/MailFilter/Composite/Antispam.pm:40
+#: ../../main/mailfilter/src/EBox/MailFilter/Composite/Antispam.pm:41
+msgid "Antispam"
+msgstr "Антиспам"
+
+#: ../../main/mailfilter/src/EBox/MailFilter.pm:543
+msgid "Files ACL"
+msgstr "Файлы ACL"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/AmavisSender.pm:76
+#: ../../main/core/src/EBox/SysInfo/Types/DomainName.pm:88
+#: ../../main/mail/src/EBox/Mail/CGI/CreateGroupAlias.pm:47
+#: ../../main/mail/src/EBox/Mail/CGI/CreateAlias.pm:50
+msgid "domain name"
+msgstr "имя домена"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/AmavisSender.pm:80
+msgid "email address"
+msgstr "почтовый адрес"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/AmavisSender.pm:84
+msgid ""
+"The sender ought be either an email address or a domain name prefixed with "
+"'@'"
+msgstr ""
+"Отправитель должен быть либо почтовым адресом либо именем домена с префиксом "
+"'@'"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/AntispamThreshold.pm:105
+msgid "Write down a decimal number"
+msgstr "Напишите десятичное число"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/AntispamThreshold.pm:110
+msgid "Only non-zero positive numbers are allowed"
+msgstr "Разрешено ненулевое положительное число"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/AntispamThreshold.pm:118
+#, perl-brace-format
+msgid "Write down a number lesser than {m}"
+msgstr "Напишите число меньшее {m}"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/AntispamThreshold.pm:125
+#, perl-brace-format
+msgid "Write down a number greater  than {m}"
+msgstr "Напишите число большее  чем {m}"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/MIMEType.pm:57
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/MIMETypeACL.pm:100
+msgid "MIME type"
+msgstr "MIME тип"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/FileExtension.pm:55
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/FileExtensionACL.pm:104
+msgid "file extension"
+msgstr "файловые расширения"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/Policy.pm:28
+msgid "Pass"
+msgstr "Разрешить"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/Policy.pm:29
+msgid "Notify sender server"
+msgstr "Уведомлять сервер отправителя "
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/Policy.pm:30
+msgid "Notify mail sender account"
+msgstr "Уведомление учетной записи отправителя электронной почты "
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/Policy.pm:31
+msgid "Drop silently"
+msgstr "Игнорирование без уведомлений"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Types/Policy.pm:75
+msgid "Mailfilter's policy"
+msgstr "Политика почтовых фильтров"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Amavis.pm:68
+msgid "To configure amavis"
+msgstr "Настроить amavis"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Amavis.pm:426
+msgid "Zentyal internal mail filter"
+msgstr "Zentyal внутренний почтовый фильтр"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Amavis.pm:439
+msgid "SMTP filter proxy"
+msgstr "Прокси фильтр SMTP"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/VDomainsLdap.pm:599
+#, perl-brace-format
+msgid "Virtual mail domain {vd} does not exist"
+msgstr "Виртуальный почтовый домен {vd} не существует"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/SpamAssassin.pm:59
+msgid " To configure spamassassin daemon"
+msgstr " Настройка spamassassin демона"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/SpamAssassin.pm:328
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:92
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:58
+msgid "Spam threshold"
+msgstr "Порог спама"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/SpamAssassin.pm:328
+msgid "It must be a number(decimal point allowed)"
+msgstr "Это должно быть числом (десятичная точка разрешена)"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/SpamAssassin.pm:338
+msgid "The spam's threshold cannot be higher than its autolearn threshold"
+msgstr "Порог спама не может быть выше порога авто-обучения"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/SpamAssassin.pm:342
+msgid ""
+"The spam's threshold cannot be lower or equal than its ham's autolearn "
+"threshold"
+msgstr "Порог спама не может быть равным или меньше порога авто-обучения ham"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/SpamAssassin.pm:379
+msgid ""
+"Cannot learn because bayesian filter is disabled in the current "
+"configuration. In order to be able to learn enable the bayesian filter and "
+"save changes"
+msgstr ""
+"Невозможно обучение так как Байесовский фильтр отключен в текущей "
+"конфигурации. Для обучение необходимо включить Байесовский фильтр и записать "
+"изменение"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/SpamAssassin.pm:392
+#, perl-brace-format
+msgid "Accounts from the domain {d} cannot train the bayesian filter"
+msgstr "Аккаунты из домена {d} не могут обучить байесовский фильтр"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Composite/ExternalConnections.pm:39
+msgid "External connections"
+msgstr "Внешние соединения"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Composite/FileFilter.pm:39
+msgid "Attached Files Filter"
+msgstr "Фильтр почтовых вложений"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Composite/FileFilter.pm:41
+msgid ""
+"Filter mail messages according attached files. The transparent POP proxy "
+"only filters by extension"
+msgstr ""
+"Фильтр почтовых сообщений содержащих вложения. В прозрачном POP прокси, "
+"только фильтр по расширению"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:80
+msgid "Use virus filtering"
+msgstr "Использовать фильтрацию вирусов"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:86
+msgid "Use spam filtering"
+msgstr "Использовать фильтрацию спама"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:99
+msgid "default"
+msgstr "по умолчанию"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:103
+msgid "custom threshold"
+msgstr "пользовательский порог"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:150
+msgid "Antispam sender policy"
+msgstr "Политика антиспам отправителей"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:161
+msgid "Virtual Domains specific policies"
+msgstr "Псевдонимы виртуального домена"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:167
+msgid "virtual domain policy"
+msgstr "политика виртуальных доменов"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/VDomainsFilter.pm:183
+#, perl-brace-format
+msgid ""
+"There are no virtual mail domains managed by this server. You can create "
+"some in the {openA}virtual domains mail page{closeA}."
+msgstr ""
+"Нет виртуальных доменов управляемых этим сервером. Вы должны создать хотя бы "
+"один в {openA}virtual domains mail page{closeA}."
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:62
+msgid "The score threshold to mark a message as spam"
+msgstr "Порог для пометки сообщения как спам"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:66
+msgid "Spam subject tag"
+msgstr "Признак спама"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:69
+msgid "Tag which will be added to the spam mail subject"
+msgstr "Признак спама, который будет добавлен в тему письма"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:73
+msgid "Use Bayesian classifier"
+msgstr "Использовать классификатор Байеса"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:79
+msgid "Auto-whitelist"
+msgstr "Автоматический белый список"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:82
+msgid "Change the score of mail according to the sender history"
+msgstr "Изменение баллов почты согласно истории отправителя"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:86
+msgid "Auto-learn"
+msgstr "Авто-обучение"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:89
+msgid "Feedback the learning system with messages that reach the threshold"
+msgstr "Обратная связь между системой обучения с балами сообщения"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:94
+msgid "Autolearn spam threshold"
+msgstr "Авто-обучения порога спама"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:98
+msgid ""
+"Spam messages with a score equal or greater than this threshold will be "
+"added to the learning system "
+msgstr ""
+"Спам балл сообщения равен или превышает порог и будет добавлено в систему "
+"обучения "
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:102
+msgid "Autolearn ham threshold"
+msgstr "Авто-обучение ham порог"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:105
+msgid ""
+"Ham messages with a score below this threshold will be added to the learning "
+"system"
+msgstr "Ham балл сообщения ниже порога будет добавлен в обучающуюся систему"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:111
+msgid "Antispam configuration"
+msgstr "Настройка антиспам"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:155
+msgid ""
+"You must define autolearn spam threshold when autolearn option is active"
+msgstr ""
+"Необходимо определить порог спама, когда вы включаете опцию авто-обучения"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:161
+msgid "You must define autolearn ham threshold when autolearn option is active"
+msgstr ""
+"Необходимо определить порог ham, когда вы включаете опцию авто-обучения"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:167
+msgid ""
+"The spam's autolearn threshold cannot be lower than the default spam's "
+"treshold "
+msgstr ""
+"Порог спама авто-обучения не должно быть ниже порога спама по умолчанию "
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamConfiguration.pm:173
+msgid ""
+"The ham's autolearn threshold canot be higher or equal than the default spam "
+"level"
+msgstr "Порог ham авто-обучения не должен быть ниже порога спам по умолчанию"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalDomain.pm:70
+msgid "External mail domain"
+msgstr "Внешний почтовый домен"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalDomain.pm:76
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalMTA.pm:77
+msgid "Allow connection"
+msgstr "Разрешить соединения"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalDomain.pm:84
+msgid "External mail domains"
+msgstr "Внешние почтовые домены"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalDomain.pm:96
+msgid "external mail domain"
+msgstr "внешний почтовый домен"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalDomain.pm:97
+msgid ""
+"Here you can specify which external mail domains can connect to the mail "
+"filter"
+msgstr ""
+"Здесь можно указать, какие внешние домены могут подключаться к почтовому "
+"фильтру"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalDomain.pm:114
+#, perl-brace-format
+msgid "{d} is a internal Zentyal virtual main domain"
+msgstr "{d} внутренний виртуальный домен Zentyal"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalMTA.pm:70
+msgid "External mail server"
+msgstr "Внешний почтовый сервер"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalMTA.pm:73
+msgid "IP address of the server"
+msgstr "IP адрес сервера"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalMTA.pm:85
+msgid "External mail servers"
+msgstr "Внешние почтовые сервера"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalMTA.pm:97
+msgid "external mail server"
+msgstr "внешний почтовый сервер"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalMTA.pm:98
+msgid ""
+"Here you can specify which external mail servers can connect to the mail "
+"filter"
+msgstr ""
+"Здесь можно указать, какие внешние почтовые сервера могут соединяться с "
+"почтовым фильтром"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/ExternalMTA.pm:140
+#, perl-brace-format
+msgid "Invalid external MTA {mta}. Local network addresses are not allowed"
+msgstr ""
+"Не действительный внешний MTA {mta}. Локальные сетевые адреса не разрешены"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:61
+msgid "Antivirus enabled"
+msgstr "Антивирус включен"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:67
+msgid "Antispam enabled"
+msgstr "Антиспам включен"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:74
+msgid "Service's port"
+msgstr "Порт службы"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:81
+msgid "Notify of non-spam problematic messages"
+msgstr "Уведомление проблемное сообщение не спам"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:90
+#: ../../main/core/src/EBox/RemoteServices.pm:505
+#: ../../main/core/src/EBox/RemoteServices.pm:546
+msgid "mail address"
+msgstr "почтовый адрес"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:128
+#, perl-brace-format
+msgid "The port {port} is already used by module {mod}"
+msgstr "Порт {port} уже используется модулем {mod}"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamVDomainACL.pm:61
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamACL.pm:55
+msgid "Mail sender"
+msgstr "Почтовый отправитель"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamVDomainACL.pm:67
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamACL.pm:61
+msgid "Policy"
+msgstr "Политика"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamVDomainACL.pm:76
+msgid "Sender policy for virtual domain"
+msgstr "Политика для отправителей виртуального домена"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamVDomainACL.pm:88
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamACL.pm:82
+msgid "sender policy"
+msgstr "политика отправителей"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamVDomainACL.pm:96
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamACL.pm:90
+msgid "whitelist"
+msgstr "белый список"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamVDomainACL.pm:97
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamACL.pm:91
+msgid "blacklist"
+msgstr "черный список"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamVDomainACL.pm:98
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamACL.pm:92
+msgid "process"
+msgstr "процесс"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/MIMETypeACL.pm:77
+msgid "MIME Type"
+msgstr "MIME тип"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/MIMETypeACL.pm:83
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/FileExtensionACL.pm:87
+msgid "Allow"
+msgstr "Разрешить"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/MIMETypeACL.pm:92
+msgid "MIME types"
+msgstr "MIME типы"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/MIMETypeACL.pm:101
+msgid ""
+"MIME types which are not listed below are allowed. MIME types aren't used by "
+"POP transparent proxy"
+msgstr ""
+"MIME типы не перечисленные ниже разрешены. MIME типы не используются POP "
+"прозрачном прокси"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/FileExtensionACL.pm:81
+msgid "File extension"
+msgstr "Расширение файла"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/FileExtensionACL.pm:96
+msgid "File extensions"
+msgstr "Файловые расширения"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/FileExtensionACL.pm:105
+msgid "Extensions which are not listed below are allowed"
+msgstr "Расширение не перечисленные ниже разрешены"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamTraining.pm:55
+msgid "Mailbox"
+msgstr "Почтовый ящик"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamTraining.pm:61
+msgid "Mailbox contains"
+msgstr "Содержимое почтового ящика"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamTraining.pm:71
+msgid "Train bayesian spam filter"
+msgstr "Обучать байесовский спам фильтр"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamTraining.pm:76
+msgid "Learned from messages"
+msgstr "Обучение по сообщениям"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamTraining.pm:78
+msgid "Train"
+msgstr "Учить"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamTraining.pm:87
+msgid "spam"
+msgstr "спам"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamTraining.pm:88
+msgid "ham"
+msgstr "ham"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamTraining.pm:115
+#, perl-brace-format
+msgid "Invalid mailbox type: {type}"
+msgstr "Неправильный тип почтового ящика: {type}"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamACL.pm:70
+msgid "Sender policy"
+msgstr "Политика отправителей"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AntispamACL.pm:154
+#: ../../main/openchange/src/EBox/OpenChange/Model/VDomains.pm:158
+#: ../../main/mail/src/EBox/Mail/Model/VDomains.pm:77
+msgid "Virtual Domains"
+msgstr "Виртуальные домены"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisPolicy.pm:58
+msgid "Virus policy"
+msgstr "Политика вирусов"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisPolicy.pm:65
+msgid "Spam policy"
+msgstr "Политика спам"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisPolicy.pm:68
+msgid "Bounce policy will be ignored for high-score spam messages"
+msgstr "Политики фильтрации будут игнорироваться для спама с высокой оценкой"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisPolicy.pm:72
+msgid "Banned files policy"
+msgstr "Политика блокирования файлов"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisPolicy.pm:78
+msgid "Bad header policy"
+msgstr "Политика плохих заголовков"
+
+#: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisPolicy.pm:87
+msgid "Filter Policies"
+msgstr "Политики фильтра"
+
 #: ../../main/network/src/EBox/NetworkUtil.pm:56
 #: ../../main/network/src/EBox/Network/Model/GatewayTable.pm:280
 #, perl-brace-format
@@ -2315,27 +3029,14 @@ msgstr "сетевой интерфейс"
 msgid "method"
 msgstr "метод"
 
-#: ../../main/network/src/EBox/Network/CGI/Iface.pm:93
+#: ../../main/network/src/EBox/Network/CGI/Iface.pm:90
 msgid "ip address"
 msgstr "ip-адрес"
 
-#: ../../main/network/src/EBox/Network/CGI/Iface.pm:94
+#: ../../main/network/src/EBox/Network/CGI/Iface.pm:91
 #: ../../main/network/src/EBox/Network/CGI/VIface.pm:66
 msgid "netmask"
 msgstr "маска подсети"
-
-#: ../../main/network/src/EBox/Network/CGI/Iface.pm:110
-msgid "bridge"
-msgstr "мост"
-
-#: ../../main/network/src/EBox/Network/CGI/Iface.pm:116
-msgid "bond"
-msgstr ""
-
-#: ../../main/network/src/EBox/Network/CGI/Iface.pm:127
-#, fuzzy
-msgid "bonding mode"
-msgstr "Сконфигурированные"
 
 #: ../../main/network/src/EBox/Network/CGI/Diag.pm:31
 #: ../../main/network/src/EBox/Network/CGI/Diag.pm:42
@@ -2358,9 +3059,9 @@ msgstr "Локальный адрес"
 
 #: ../../main/network/src/EBox/Network/CGI/Diag.pm:95
 #: ../../main/network/src/EBox/Network/CGI/Diag.pm:103
-#: ../../main/network/src/EBox/Network.pm:3433
+#: ../../main/network/src/EBox/Network.pm:3207
 #: ../../main/objects/src/EBox/Objects/Model/MemberTable.pm:81
-#: ../../main/dhcp/src/EBox/DHCP.pm:979 ../../main/dhcp/src/EBox/DHCP.pm:1070
+#: ../../main/dhcp/src/EBox/DHCP.pm:981 ../../main/dhcp/src/EBox/DHCP.pm:1079
 #: ../../main/network/src/templates/diag.mas:33
 msgid "MAC address"
 msgstr "MAC-адрес"
@@ -2375,13 +3076,13 @@ msgid "virtual interface name"
 msgstr "имя виртуального интерфейса"
 
 #: ../../main/network/src/EBox/Network/CGI/Ifaces.pm:29
-#: ../../main/network/src/EBox/Network.pm:3475
+#: ../../main/network/src/EBox/Network.pm:3249
 msgid "Network Interfaces"
 msgstr "Сетевые интерфейсы"
 
 #: ../../main/network/src/EBox/Network/CGI/Vlan.pm:42
-#: ../../main/network/src/EBox/Network.pm:1616
-#: ../../main/network/src/EBox/Network.pm:1647
+#: ../../main/network/src/EBox/Network.pm:1568
+#: ../../main/network/src/EBox/Network.pm:1599
 #: ../../main/network/src/templates/ifaces.mas:112
 msgid "VLAN Id"
 msgstr "VLAN Id"
@@ -2644,7 +3345,7 @@ msgstr ""
 
 #: ../../main/network/src/EBox/Network/Model/StaticRoute.pm:187
 #: ../../main/network/src/EBox/Network.pm:110
-#: ../../main/network/src/EBox/Network.pm:3494
+#: ../../main/network/src/EBox/Network.pm:3268
 #: ../../main/objects/src/EBox/Objects.pm:406
 #: ../../main/services/src/EBox/Services.pm:626
 msgid "Network"
@@ -2667,7 +3368,7 @@ msgid "Static Routes List"
 msgstr "Список статических маршрутов"
 
 #: ../../main/network/src/EBox/Network/Model/StaticRoute.pm:211
-#: ../../main/network/src/EBox/Network.pm:3511
+#: ../../main/network/src/EBox/Network.pm:3285
 msgid "Static Routes"
 msgstr "Статические маршруты"
 
@@ -2751,52 +3452,52 @@ msgstr "Zentyal установит HTTP прокси для всех польз�
 msgid "Zentyal will set HTTP proxy for APT"
 msgstr "Zentyal установит HTTP прокси для APT"
 
-#: ../../main/network/src/EBox/Network.pm:740
+#: ../../main/network/src/EBox/Network.pm:692
 #, fuzzy
 msgid "Argument must be a IP address"
 msgstr "Публичный IP-адрес Zentyal."
 
-#: ../../main/network/src/EBox/Network.pm:971
-#: ../../main/network/src/EBox/Network.pm:975
+#: ../../main/network/src/EBox/Network.pm:923
+#: ../../main/network/src/EBox/Network.pm:927
 msgid "Virtual interface name"
 msgstr "Имя виртуального интерфейса"
 
-#: ../../main/network/src/EBox/Network.pm:974
-#: ../../main/network/src/EBox/Network.pm:1345
-#: ../../main/network/src/EBox/Network.pm:3036
+#: ../../main/network/src/EBox/Network.pm:926
+#: ../../main/network/src/EBox/Network.pm:1297
+#: ../../main/network/src/EBox/Network.pm:2868
 #: ../../main/network/src/templates/wizard/network.mas:49
 #: ../../main/network/src/templates/ifaces.mas:74
 #: ../../main/network/src/templates/ifaces.mas:151
 msgid "Netmask"
 msgstr "Маска подсети"
 
-#: ../../main/network/src/EBox/Network.pm:980
+#: ../../main/network/src/EBox/Network.pm:932
 #, fuzzy, perl-brace-format
 msgid "Address {ip} is already in use by interface {iface}"
 msgstr "VPN адрес {addr} уже используется интерфейсом {iface}"
 
-#: ../../main/network/src/EBox/Network.pm:1146
+#: ../../main/network/src/EBox/Network.pm:1098
 #, perl-brace-format
 msgid "There is already an interface called {al}"
 msgstr "Интерфейс уже существует, и называется {al}"
 
-#: ../../main/network/src/EBox/Network.pm:1158
+#: ../../main/network/src/EBox/Network.pm:1110
 #, perl-brace-format
 msgid "There is already a interface with the alias {al}"
 msgstr "Интерфейс уже существует с псевдонимом {al}"
 
-#: ../../main/network/src/EBox/Network.pm:1166
+#: ../../main/network/src/EBox/Network.pm:1118
 msgid ""
 "Cannot set an alias with the character \":\". This character is reserved for "
 "virtual interfaces"
 msgstr ""
 
-#: ../../main/network/src/EBox/Network.pm:1370
+#: ../../main/network/src/EBox/Network.pm:1322
 #, fuzzy, perl-brace-format
 msgid "The IP {ip} is already assigned to interface {iface}"
 msgstr "VPN адрес {addr} уже используется интерфейсом {iface}"
 
-#: ../../main/network/src/EBox/Network.pm:1496
+#: ../../main/network/src/EBox/Network.pm:1448
 #, perl-brace-format
 msgid ""
 "Cannot use the address {addr} because interface {if} has already an address "
@@ -2805,13 +3506,13 @@ msgstr ""
 "Не возможно использовать адрес  {addr}, так как интерфейс  {if}, уже "
 "использует те же адреса в своей сети"
 
-#: ../../main/network/src/EBox/Network.pm:1527
+#: ../../main/network/src/EBox/Network.pm:1479
 msgid "This interface cannot be put in trunk mode, it is an vlan interface."
 msgstr ""
 "Данный интерфейс не может быть переведен в trunk режим, так как это "
 "интерфейс vlan."
 
-#: ../../main/network/src/EBox/Network.pm:1582
+#: ../../main/network/src/EBox/Network.pm:1534
 msgid ""
 "This interface is in trunk mode, you should unconfigure all the vlan "
 "interfaces in this trunk before changing its configuration mode."
@@ -2819,13 +3520,13 @@ msgstr ""
 "Данный интерфейс в режиме trunk, вам необходимо расконфигурироать все "
 "интерфейсы vlan в trunk перед изменением режима."
 
-#: ../../main/network/src/EBox/Network.pm:1626
+#: ../../main/network/src/EBox/Network.pm:1578
 msgid ""
 "Network interfaces need to be in trunk mode before adding vlans to them."
 msgstr ""
 "Сетевые интерфейсы должны быть в режиме trunk перед добавлением к ним vlans."
 
-#: ../../main/network/src/EBox/Network.pm:2939
+#: ../../main/network/src/EBox/Network.pm:2771
 #, fuzzy
 msgid ""
 "The requested operation will cause one of the configured gateways or static "
@@ -2836,12 +3537,12 @@ msgstr ""
 "Пожалуйста удалите сначала их, если вы действительно хотите внести такие "
 "изменения."
 
-#: ../../main/network/src/EBox/Network.pm:3004
+#: ../../main/network/src/EBox/Network.pm:2836
 #, perl-brace-format
 msgid "Gateway {gw} must be in the same network that a static interface"
 msgstr ""
 
-#: ../../main/network/src/EBox/Network.pm:3007
+#: ../../main/network/src/EBox/Network.pm:2839
 #, fuzzy, perl-brace-format
 msgid ""
 "Gateway {gw} must be in the same network that static interface. Currently it "
@@ -2850,59 +3551,51 @@ msgstr ""
 "Шлюз {gw} должен быть доступен со статического интерфейса. Сейчас он "
 "доступен через не статический интерфейс {iface}"
 
-#: ../../main/network/src/EBox/Network.pm:3399
+#: ../../main/network/src/EBox/Network.pm:3173
 msgid "down"
 msgstr "лежит"
 
-#: ../../main/network/src/EBox/Network.pm:3404
+#: ../../main/network/src/EBox/Network.pm:3178
 #: ../../main/core/src/templates/report/raid.mas:228
 msgid "up"
 msgstr "поднят"
 
-#: ../../main/network/src/EBox/Network.pm:3409
+#: ../../main/network/src/EBox/Network.pm:3183
 msgid "external"
 msgstr "внешний"
 
-#: ../../main/network/src/EBox/Network.pm:3411
+#: ../../main/network/src/EBox/Network.pm:3185
 msgid "internal"
 msgstr "внутренний"
 
-#: ../../main/network/src/EBox/Network.pm:3417
+#: ../../main/network/src/EBox/Network.pm:3191
 msgid "link ok"
 msgstr "линк в норме"
 
-#: ../../main/network/src/EBox/Network.pm:3419
+#: ../../main/network/src/EBox/Network.pm:3193
 msgid "no link"
 msgstr "нет линка"
 
-#: ../../main/network/src/EBox/Network.pm:3428
-#: ../../main/mail/src/EBox/Mail.pm:1606
-#: ../../main/core/src/templates/report/raid.mas:100
-#: ../../main/core/src/templates/moduleStatusTable.mas:64
-#: ../../main/mail/src/templates/qmanager.mas:17
-msgid "Status"
-msgstr "Статус"
-
-#: ../../main/network/src/EBox/Network.pm:3454
+#: ../../main/network/src/EBox/Network.pm:3228
 msgid "Tx bytes"
 msgstr "Tx байт"
 
-#: ../../main/network/src/EBox/Network.pm:3464
+#: ../../main/network/src/EBox/Network.pm:3238
 msgid "Rx bytes"
 msgstr "Rx байт"
 
-#: ../../main/network/src/EBox/Network.pm:3499
-#: ../../main/network/src/EBox/Network.pm:3949
-#: ../../main/network/src/EBox/Network.pm:3988
+#: ../../main/network/src/EBox/Network.pm:3273
+#: ../../main/network/src/EBox/Network.pm:3723
+#: ../../main/network/src/EBox/Network.pm:3762
 #: ../../main/dhcp/src/EBox/DHCP/Model/Interfaces.pm:142
 msgid "Interfaces"
 msgstr "Интерфейсы"
 
-#: ../../main/network/src/EBox/Network.pm:3503
+#: ../../main/network/src/EBox/Network.pm:3277
 msgid "Gateways"
 msgstr "Шлюзы"
 
-#: ../../main/network/src/EBox/Network.pm:3515
+#: ../../main/network/src/EBox/Network.pm:3289
 #, fuzzy
 msgid "Tools"
 msgstr "Инструменты"
@@ -2995,54 +3688,54 @@ msgstr "Вы не можете использовать MAC-адреса с ди
 msgid "{ip} overlaps with the address or another object's member"
 msgstr "{ip} совпадает с другим адресом или членом других объектов"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:99
+#: ../../main/dhcp/src/EBox/DHCP.pm:101
 #, perl-brace-format
 msgid "{server} configuration file"
 msgstr "{server} конфигурационный файл"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:104
+#: ../../main/dhcp/src/EBox/DHCP.pm:106
 #, perl-brace-format
 msgid "AppArmor profile for {server} daemon"
 msgstr "Профиль Apparmor для {server} демона"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:129
+#: ../../main/dhcp/src/EBox/DHCP.pm:131
 msgid "Trivial File Transfer Protocol"
 msgstr "Простой протокол передачи файлов"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:143
+#: ../../main/dhcp/src/EBox/DHCP.pm:145
 msgid "Dynamic Host Configuration Protocol"
 msgstr "Протокол динамической конфигурации узла"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:195
+#: ../../main/dhcp/src/EBox/DHCP.pm:197
 #, perl-brace-format
 msgid "Disable {server} init script"
 msgstr "Отключить {server} скрипт инициализации"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:353 ../../main/dhcp/src/EBox/DHCP.pm:389
-#: ../../main/dhcp/src/EBox/DHCP.pm:439 ../../main/dhcp/src/EBox/DHCP.pm:485
-#: ../../main/dhcp/src/EBox/DHCP.pm:530 ../../main/dhcp/src/EBox/DHCP.pm:626
-#: ../../main/dhcp/src/EBox/DHCP.pm:739
+#: ../../main/dhcp/src/EBox/DHCP.pm:355 ../../main/dhcp/src/EBox/DHCP.pm:391
+#: ../../main/dhcp/src/EBox/DHCP.pm:441 ../../main/dhcp/src/EBox/DHCP.pm:487
+#: ../../main/dhcp/src/EBox/DHCP.pm:532 ../../main/dhcp/src/EBox/DHCP.pm:628
+#: ../../main/dhcp/src/EBox/DHCP.pm:741
 #, perl-brace-format
 msgid "{iface} is not static"
 msgstr "{iface} не статический"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:612
+#: ../../main/dhcp/src/EBox/DHCP.pm:614
 msgid "Not a valid action: add, set and del are available"
 msgstr "Неправильное действие, возможны: добавить, установить или удалить"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:984
+#: ../../main/dhcp/src/EBox/DHCP.pm:986
 msgid "Leased"
 msgstr "Зарезервировано"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:984
+#: ../../main/dhcp/src/EBox/DHCP.pm:986
 msgid "Released"
 msgstr "Свободно"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:987
+#: ../../main/dhcp/src/EBox/DHCP.pm:989
 msgid "DHCP"
 msgstr "DHCP"
 
-#: ../../main/dhcp/src/EBox/DHCP.pm:1098
+#: ../../main/dhcp/src/EBox/DHCP.pm:1107
 msgid "DHCP leases"
 msgstr "Аренда DHCP"
 
@@ -3163,13 +3856,13 @@ msgid "Range {from}-{to} includes the HA floating IP: \"{name}\" - {IP}"
 msgstr "Диапазон {from}-{to} включает интерфейс с IP-адресом: {ifaceIP}"
 
 #: ../../main/dhcp/src/EBox/DHCP/Model/RangeTable.pm:198
-#: ../../main/mail/src/EBox/Mail.pm:1599
+#: ../../main/mail/src/EBox/Mail.pm:1681
 #: ../../main/core/src/templates/ajax/setter/portRangeSetter.mas:20
 msgid "From"
 msgstr "От"
 
 #: ../../main/dhcp/src/EBox/DHCP/Model/RangeTable.pm:204
-#: ../../main/mail/src/EBox/Mail.pm:1600
+#: ../../main/mail/src/EBox/Mail.pm:1682
 #: ../../main/core/src/templates/ajax/setter/portRangeSetter.mas:21
 msgid "To"
 msgstr "К"
@@ -4031,7 +4724,7 @@ msgstr ""
 
 #: ../../main/core/src/EBox/CGI/Search.pm:29
 #: ../../main/core/src/templates/ajax/tableBody.mas:266
-#: ../../main/core/src/templates/ajax/treeView.mas:39
+#: ../../main/core/src/templates/ajax/treeView.mas:40
 #: ../../main/software/src/templates/ebox.mas:319
 msgid "Search"
 msgstr "Найти"
@@ -4596,12 +5289,6 @@ msgstr ""
 msgid "Administration interface TCP port"
 msgstr "TCP-порт администраторского интерфейса"
 
-#: ../../main/core/src/EBox/SysInfo/Types/DomainName.pm:88
-#: ../../main/mail/src/EBox/Mail/CGI/CreateGroupAlias.pm:47
-#: ../../main/mail/src/EBox/Mail/CGI/CreateAlias.pm:50
-msgid "domain name"
-msgstr "имя домена"
-
 #: ../../main/core/src/EBox/SysInfo/CGI/CurrentProgress.pm:37
 #: ../../main/software/src/EBox/Software/CGI/CurrentPackage.pm:31
 msgid "Upgrading"
@@ -5155,11 +5842,6 @@ msgstr "Премиум"
 #, fuzzy
 msgid "Zentyal Remote Client"
 msgstr "Клиент Zentyal Cloud"
-
-#: ../../main/core/src/EBox/RemoteServices.pm:505
-#: ../../main/core/src/EBox/RemoteServices.pm:546
-msgid "mail address"
-msgstr "почтовый адрес"
 
 #: ../../main/core/src/EBox/RemoteServices.pm:1012
 #, perl-brace-format
@@ -5834,11 +6516,6 @@ msgstr "Файл сертификата"
 msgid "Revoke and reissue certificate"
 msgstr "Отозвать сертификат"
 
-#: ../../main/openchange/src/EBox/OpenChange/Model/VDomains.pm:158
-#: ../../main/mail/src/EBox/Mail/Model/VDomains.pm:77
-msgid "Virtual Domains"
-msgstr "Виртуальные домены"
-
 #: ../../main/openchange/src/EBox/OpenChange/Model/VDomains.pm:159
 #: ../../main/mail/src/EBox/Mail/CGI/CreateAccount.pm:49
 #: ../../main/mail/src/EBox/Mail/Model/VDomains.pm:85
@@ -6070,46 +6747,46 @@ msgstr "Сохранение изменений в модулях"
 msgid "Enable OpenChange account"
 msgstr "PDC/File sharing аккаунт"
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:123
+#: ../../main/openchange/src/EBox/OpenChange.pm:121
 msgid "Enable proxy, proxy_http and headers Apache 2 modules."
 msgstr ""
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:124
+#: ../../main/openchange/src/EBox/OpenChange.pm:122
 #, fuzzy
 msgid "To make OpenChange Webmail be accesible at http://ip/SOGo/."
 msgstr "Веб-почта теперь доступна по адресу http://ip/webmail/."
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:226
+#: ../../main/openchange/src/EBox/OpenChange.pm:215
 #, fuzzy
 msgid "To configure sogo daemon"
 msgstr " Настроить демона clamd"
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:231
+#: ../../main/openchange/src/EBox/OpenChange.pm:220
 #, fuzzy
 msgid "To configure sogo parameters"
 msgstr "Настроить почтовое имя хоста"
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:236
+#: ../../main/openchange/src/EBox/OpenChange.pm:225
 #, fuzzy
 msgid "To configure autodiscovery service"
 msgstr "Настроить dovecot"
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:241
+#: ../../main/openchange/src/EBox/OpenChange.pm:230
 msgid "Remove RPC Proxy stock file to avoid interference"
 msgstr ""
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:246
+#: ../../main/openchange/src/EBox/OpenChange.pm:235
 msgid "To make SOGo webmail available"
 msgstr ""
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:251
+#: ../../main/openchange/src/EBox/OpenChange.pm:240
 #, fuzzy
 msgid "To make autodiscovery service available"
 msgstr "Настроить dovecot"
 
-#: ../../main/openchange/src/EBox/OpenChange.pm:665
-#: ../../main/mail/src/EBox/Mail.pm:106 ../../main/mail/src/EBox/Mail.pm:1511
-#: ../../main/mail/src/EBox/Mail.pm:1632
+#: ../../main/openchange/src/EBox/OpenChange.pm:628
+#: ../../main/mail/src/EBox/Mail.pm:106 ../../main/mail/src/EBox/Mail.pm:1550
+#: ../../main/mail/src/EBox/Mail.pm:1714
 #: ../../main/mail/src/EBox/Mail/Model/MailUser.pm:68
 msgid "Mail"
 msgstr "Почта"
@@ -6289,11 +6966,11 @@ msgstr "Настройки управления программным обес�
 msgid "Initial Setup"
 msgstr ""
 
-#: ../../main/firewall/src/EBox/Iptables.pm:657
+#: ../../main/firewall/src/EBox/Iptables.pm:640
 msgid "Firewall failed to add rules for the following modules: "
 msgstr "Брандмауэру не удалось добавить правила для следующих модулей: "
 
-#: ../../main/firewall/src/EBox/Iptables.pm:660
+#: ../../main/firewall/src/EBox/Iptables.pm:643
 msgid ""
 "Probably this is caused by a lack of connectivity, check your configuration "
 "or disable those modules"
@@ -6301,8 +6978,8 @@ msgstr ""
 "Вероятно, это вызвано отсутствием подключения, проверьте настройки или "
 "отключите эти модули"
 
-#: ../../main/firewall/src/EBox/Iptables.pm:911
-#: ../../main/firewall/src/EBox/Iptables.pm:948
+#: ../../main/firewall/src/EBox/Iptables.pm:894
+#: ../../main/firewall/src/EBox/Iptables.pm:931
 #: ../../main/firewall/src/EBox/Firewall/IptablesRedirectRule.pm:81
 #: ../../main/firewall/src/EBox/Firewall/IptablesRule/SNAT.pm:71
 msgid ""
@@ -6311,8 +6988,8 @@ msgstr ""
 "Вы должны установить значение iptables_log_limit в конфигурационном файле "
 "ebox"
 
-#: ../../main/firewall/src/EBox/Iptables.pm:917
-#: ../../main/firewall/src/EBox/Iptables.pm:954
+#: ../../main/firewall/src/EBox/Iptables.pm:900
+#: ../../main/firewall/src/EBox/Iptables.pm:937
 #: ../../main/firewall/src/EBox/Firewall/IptablesRedirectRule.pm:86
 #: ../../main/firewall/src/EBox/Firewall/IptablesRule/SNAT.pm:76
 msgid ""
@@ -6393,7 +7070,7 @@ msgstr "Условие"
 
 #: ../../main/firewall/src/EBox/Firewall/Model/EBoxServicesRuleTable.pm:148
 #: ../../main/firewall/src/EBox/Firewall/Model/BaseRuleTable.pm:99
-#: ../../main/firewall/src/EBox/Firewall.pm:794
+#: ../../main/firewall/src/EBox/Firewall.pm:795
 msgid "Decision"
 msgstr "Решение"
 
@@ -6404,7 +7081,7 @@ msgstr "Правила, добавленные службами Zentyal (рас�
 
 #: ../../main/firewall/src/EBox/Firewall/Model/EBoxServicesRuleTable.pm:183
 #: ../../main/firewall/src/EBox/Firewall/Model/BaseRuleTable.pm:200
-#: ../../main/firewall/src/EBox/Firewall.pm:622
+#: ../../main/firewall/src/EBox/Firewall.pm:623
 msgid "Packet Filter"
 msgstr "Фильтр пакетов"
 
@@ -6436,13 +7113,6 @@ msgstr "Первоначальное назначение"
 #: ../../main/firewall/src/EBox/Firewall/Model/RedirectsTable.pm:263
 msgid "Original destination port"
 msgstr "Первоначальный порт назначения"
-
-#: ../../main/firewall/src/EBox/Firewall/Model/RedirectsTable.pm:275
-#: ../../main/firewall/src/EBox/Firewall/Model/BaseRuleTable.pm:108
-#: ../../main/firewall/src/EBox/Firewall/Model/SNAT.pm:72
-#: ../../main/firewall/src/EBox/Firewall.pm:789
-msgid "Source"
-msgstr "Источник"
 
 #: ../../main/firewall/src/EBox/Firewall/Model/RedirectsTable.pm:283
 #: ../../main/firewall/src/EBox/Firewall/Model/BaseRuleTable.pm:116
@@ -6498,7 +7168,7 @@ msgid "List of forwarded ports"
 msgstr "Список перенаправленных портов"
 
 #: ../../main/firewall/src/EBox/Firewall/Model/RedirectsTable.pm:355
-#: ../../main/firewall/src/EBox/Firewall.pm:625
+#: ../../main/firewall/src/EBox/Firewall.pm:626
 msgid "Port Forwarding"
 msgstr "Перенаправление портов"
 
@@ -6515,7 +7185,7 @@ msgid "DENY"
 msgstr "DENY"
 
 #: ../../main/firewall/src/EBox/Firewall/Model/BaseRuleTable.pm:69
-#: ../../main/firewall/src/EBox/Firewall.pm:799
+#: ../../main/firewall/src/EBox/Firewall.pm:800
 msgid "LOG"
 msgstr "LOG"
 
@@ -6526,7 +7196,7 @@ msgstr "Источник"
 
 #: ../../main/firewall/src/EBox/Firewall/Model/BaseRuleTable.pm:139
 #: ../../main/firewall/src/EBox/Firewall/Model/SNAT.pm:96
-#: ../../main/firewall/src/EBox/Firewall.pm:790
+#: ../../main/firewall/src/EBox/Firewall.pm:791
 msgid "Destination"
 msgstr "Назначение"
 
@@ -6577,7 +7247,7 @@ msgid "Source Network Address Translation rules"
 msgstr "Трансляция сетевых адресов"
 
 #: ../../main/firewall/src/EBox/Firewall/Model/SNAT.pm:156
-#: ../../main/firewall/src/EBox/Firewall.pm:627
+#: ../../main/firewall/src/EBox/Firewall.pm:628
 msgid "SNAT"
 msgstr ""
 
@@ -6591,7 +7261,7 @@ msgid "External networks to Zentyal"
 msgstr "Из внешних сетей на Zentyal"
 
 #: ../../main/firewall/src/EBox/Firewall.pm:53
-#: ../../main/firewall/src/EBox/Firewall.pm:802
+#: ../../main/firewall/src/EBox/Firewall.pm:803
 msgid "Firewall"
 msgstr "Файрвол"
 
@@ -6623,34 +7293,34 @@ msgstr ""
 "Обычно все внешние соединения запрещены по умолчанию и только SSH и HTTPS "
 "разрешены для внутренних соединений."
 
-#: ../../main/firewall/src/EBox/Firewall.pm:320
+#: ../../main/firewall/src/EBox/Firewall.pm:321
 #, fuzzy
 msgid "port redirections"
 msgstr "Настройки отчета"
 
-#: ../../main/firewall/src/EBox/Firewall.pm:787
+#: ../../main/firewall/src/EBox/Firewall.pm:788
 msgid "Input interface"
 msgstr "Входящий интерфейс"
 
-#: ../../main/firewall/src/EBox/Firewall.pm:788
+#: ../../main/firewall/src/EBox/Firewall.pm:789
 msgid "Output interface"
 msgstr "Исходящий интерфейс"
 
-#: ../../main/firewall/src/EBox/Firewall.pm:792
+#: ../../main/firewall/src/EBox/Firewall.pm:793
 #: ../../main/services/src/EBox/Services/Model/ServiceConfigurationTable.pm:150
 msgid "Source port"
 msgstr "Исходный порт"
 
-#: ../../main/firewall/src/EBox/Firewall.pm:793
+#: ../../main/firewall/src/EBox/Firewall.pm:794
 #: ../../main/services/src/EBox/Services/Model/ServiceConfigurationTable.pm:156
 msgid "Destination port"
 msgstr "Порт назначения"
 
-#: ../../main/firewall/src/EBox/Firewall.pm:799
+#: ../../main/firewall/src/EBox/Firewall.pm:800
 msgid "DROP"
 msgstr "DROP"
 
-#: ../../main/firewall/src/EBox/Firewall.pm:799
+#: ../../main/firewall/src/EBox/Firewall.pm:800
 msgid "REDIRECT"
 msgstr "REDIRECT"
 
@@ -6854,7 +7524,7 @@ msgid "OU name"
 msgstr "Имя пользователя"
 
 #: ../../main/samba/src/EBox/Samba/Composite/Settings.pm:52
-#: ../../main/samba/src/EBox/Samba.pm:1924
+#: ../../main/samba/src/EBox/Samba.pm:1959
 msgid "LDAP Settings"
 msgstr "Настройки LDAP"
 
@@ -6865,7 +7535,7 @@ msgstr ""
 "Эти настройки будут использоваться при создании нового аккаунта пользователя."
 
 #: ../../main/samba/src/EBox/Samba/Composite/UserTemplate.pm:70
-#: ../../main/samba/src/EBox/Samba.pm:1917
+#: ../../main/samba/src/EBox/Samba.pm:1955
 msgid "User Template"
 msgstr "Шаблон пользователя"
 
@@ -6874,7 +7544,7 @@ msgid "Recycle Bin"
 msgstr "Корзина"
 
 #: ../../main/samba/src/EBox/Samba/Composite/FileSharing.pm:38
-#: ../../main/samba/src/EBox/Samba.pm:1934
+#: ../../main/samba/src/EBox/Samba.pm:1969
 msgid "File Sharing"
 msgstr "Шаринг файлов"
 
@@ -7070,30 +7740,30 @@ msgstr ""
 msgid "The mode {mode} is not supported"
 msgstr "Пользователь {u} не существует"
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:429
-#: ../../main/samba/src/EBox/Samba/Provision.pm:453
-#: ../../main/samba/src/EBox/Samba/Provision.pm:482
+#: ../../main/samba/src/EBox/Samba/Provision.pm:432
+#: ../../main/samba/src/EBox/Samba/Provision.pm:456
+#: ../../main/samba/src/EBox/Samba/Provision.pm:485
 #, perl-brace-format
 msgid "Unexpected number of entries. Got {x}, expected 1."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:627
+#: ../../main/samba/src/EBox/Samba/Provision.pm:630
 #, perl-brace-format
 msgid "Could not determine the domain of the specified AD server {x}."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:647
+#: ../../main/samba/src/EBox/Samba/Provision.pm:650
 #, perl-brace-format
 msgid "Could not determine the realm of the specified AD server {x}."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:668
+#: ../../main/samba/src/EBox/Samba/Provision.pm:671
 #, perl-brace-format
 msgid ""
 "Could not bind to AD LDAP server ({x}).Please check the supplied credentials."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:717
+#: ../../main/samba/src/EBox/Samba/Provision.pm:720
 #, perl-brace-format
 msgid ""
 "Could not join to domain. The following DNS zones are stored in the main "
@@ -7103,106 +7773,106 @@ msgid ""
 "try again. Check {link} for help on how to do that."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:755
+#: ../../main/samba/src/EBox/Samba/Provision.pm:758
 #, fuzzy
 msgid "Could not retrieve the domain information."
 msgstr "Не используйте префикс www для доменов."
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:764
+#: ../../main/samba/src/EBox/Samba/Provision.pm:767
 msgid ""
 "The AD forest contains more than one domain. Samba only support one domain "
 "per forest."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:784
+#: ../../main/samba/src/EBox/Samba/Provision.pm:787
 #, perl-brace-format
 msgid "The specified domain controller {x} is unreachable."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:803
+#: ../../main/samba/src/EBox/Samba/Provision.pm:806
 #, perl-brace-format
 msgid "The local kerberos realm {x} must match the AD server realm {y}."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:812
+#: ../../main/samba/src/EBox/Samba/Provision.pm:815
 #, perl-brace-format
 msgid "The local domain {x} must match the AD server domain {y}."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:847
+#: ../../main/samba/src/EBox/Samba/Provision.pm:850
 #, perl-brace-format
 msgid ""
 "The DC {x} could not be resolved to its IP address. Please check the "
 "specified server name and DNS server."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:873
+#: ../../main/samba/src/EBox/Samba/Provision.pm:876
 #, perl-brace-format
 msgid ""
 "The specified AD server is registered on the local DNS as {x}, which matches "
 "local host name."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:894
+#: ../../main/samba/src/EBox/Samba/Provision.pm:897
 msgid ""
 "The forest functional level must be Windows Server 2003 or higher. Please "
 "raise your forest functional level."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:900
+#: ../../main/samba/src/EBox/Samba/Provision.pm:903
 msgid ""
 "The domain functional level must be Windows Server 2003 or higher. Please "
 "raise your domain functional level."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:927
+#: ../../main/samba/src/EBox/Samba/Provision.pm:930
 msgid "Error querying AD schema:"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:934
+#: ../../main/samba/src/EBox/Samba/Provision.pm:937
 msgid ""
 "The domain schema does not meet RFC 2307. You will need to upgrade to "
 "Windows Server 2003 R2 or greater."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:961
+#: ../../main/samba/src/EBox/Samba/Provision.pm:964
 msgid ""
 "The domain you are trying to join has trust relationships defined. At the "
 "moment this is not supported by samba."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:994
+#: ../../main/samba/src/EBox/Samba/Provision.pm:997
 #, fuzzy, perl-brace-format
 msgid "Could not retrieve time from AD server {x} via NTP."
 msgstr "Не используйте префикс www для доменов."
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:1007
+#: ../../main/samba/src/EBox/Samba/Provision.pm:1010
 msgid ""
 "The clock skew with the AD server is higher than two minutes. This can cause "
 "problems with kerberos authentication, please sync both clocks with an "
 "external NTP source and try again."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:1046
+#: ../../main/samba/src/EBox/Samba/Provision.pm:1049
 #, fuzzy, perl-brace-format
 msgid "The specified site {x} does not exists on the domain."
 msgstr "Сертификат {cn} не существует"
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:1058
+#: ../../main/samba/src/EBox/Samba/Provision.pm:1061
 msgid "Could not determine the site of the specified server"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:1092
+#: ../../main/samba/src/EBox/Samba/Provision.pm:1095
 msgid "Could not determine the netbios domain name."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:1096
+#: ../../main/samba/src/EBox/Samba/Provision.pm:1099
 #, perl-brace-format
 msgid ""
 "The netBIOS name {x} could not be found. Please check the specified value."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba/Provision.pm:1450
+#: ../../main/samba/src/EBox/Samba/Provision.pm:1453
 msgid "Error on group container LDAP entry creation:"
 msgstr ""
 
@@ -7436,7 +8106,7 @@ msgid ""
 msgstr ""
 
 #: ../../main/samba/src/EBox/Samba/Model/Manage.pm:37
-#: ../../main/samba/src/EBox/Samba.pm:1907
+#: ../../main/samba/src/EBox/Samba.pm:1945
 msgid "Users and Computers"
 msgstr "Пользователи и Компьютеры"
 
@@ -7477,15 +8147,31 @@ msgstr ""
 "Необходимо включить модуль Пользователи в секции Статус для того чтобы "
 "использовать это."
 
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusDefault.pm:51
+msgid "Enable virus scanning"
+msgstr ""
+
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusDefault.pm:59
+msgid "Antivirus default settings"
+msgstr "Настройки антивируса по умолчанию"
+
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusDefault.pm:82
+msgid ""
+"Zentyal antivirus module must be installed and enabled to use this feature"
+msgstr "{pkg} должен быть установлен для использования этой функции"
+
 #: ../../main/samba/src/EBox/Samba/Model/RecycleExceptions.pm:78
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusExceptions.pm:70
 msgid "User/Group/Share"
 msgstr "Пользователь/Группа/Ресурс"
 
 #: ../../main/samba/src/EBox/Samba/Model/RecycleExceptions.pm:84
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusExceptions.pm:75
 msgid "User homes"
 msgstr "Домашние каталоги пользователей"
 
 #: ../../main/samba/src/EBox/Samba/Model/RecycleExceptions.pm:89
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusExceptions.pm:80
 #: ../../main/samba/src/templates/ajax/viewer/shareViewer.mas:12
 msgid "Share"
 msgstr "Совместно используемый ресурс"
@@ -7499,8 +8185,17 @@ msgid "Add exceptions to the default Recycle Bin settings"
 msgstr "Добавить исключения в настройки по умолчанию для корзины"
 
 #: ../../main/samba/src/EBox/Samba/Model/RecycleExceptions.pm:106
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusExceptions.pm:96
 msgid "exception"
 msgstr "исключения"
+
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusExceptions.pm:90
+msgid "Samba shares antivirus exceptions"
+msgstr "Исключения антивируса для ресурсов Samba"
+
+#: ../../main/samba/src/EBox/Samba/Model/AntivirusExceptions.pm:95
+msgid "Add exceptions to the default antivirus settings"
+msgstr "Добавить исключения в настройки по умолчанию антивируса"
 
 #: ../../main/samba/src/EBox/Samba/Model/PAM.pm:104
 msgid "Enable PAM"
@@ -7808,30 +8503,30 @@ msgstr ""
 msgid "Error on LDAP entry update:"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:168
+#: ../../main/samba/src/EBox/Samba.pm:170
 #, fuzzy
 msgid "Domain Controller and File Sharing"
 msgstr "Протокол файловых ресурсов (Samba)"
 
-#: ../../main/samba/src/EBox/Samba.pm:275
+#: ../../main/samba/src/EBox/Samba.pm:277
 msgid ""
 "Your LDAP database will be populated with some basic organizational units"
 msgstr ""
 "В вашу базу данных LDAP будут добавлены основные организационные "
 "подразделения"
 
-#: ../../main/samba/src/EBox/Samba.pm:276
+#: ../../main/samba/src/EBox/Samba.pm:278
 msgid ""
 "Zentyal needs this organizational units to add users and groups into them."
 msgstr ""
 "Zentyal необходимы эти организационные подразделения для добавления в них "
 "пользователей и групп."
 
-#: ../../main/samba/src/EBox/Samba.pm:280
+#: ../../main/samba/src/EBox/Samba.pm:282
 msgid "Create Samba home directory for shares and groups"
 msgstr "Создать домашний каталог для пользователей и групп Samba"
 
-#: ../../main/samba/src/EBox/Samba.pm:281
+#: ../../main/samba/src/EBox/Samba.pm:283
 #, fuzzy
 msgid ""
 "Zentyal will create the directories for Samba shares and groups under /home/"
@@ -7840,21 +8535,21 @@ msgstr ""
 "Zentyal создаст домашний каталог для пользователей и групп Самбы в /home/"
 "ebox/samba."
 
-#: ../../main/samba/src/EBox/Samba.pm:289
+#: ../../main/samba/src/EBox/Samba.pm:291
 msgid "Configure PAM."
 msgstr "Настройте PAM."
 
-#: ../../main/samba/src/EBox/Samba.pm:290
+#: ../../main/samba/src/EBox/Samba.pm:292
 #, fuzzy
 msgid "Zentyal will give LDAP samba system account."
 msgstr "Zentyal даст пользователям LDAP системную учётную запись."
 
-#: ../../main/samba/src/EBox/Samba.pm:308
+#: ../../main/samba/src/EBox/Samba.pm:310
 #, fuzzy
 msgid "To set up kerberos authentication"
 msgstr "Настроить узел проверки подлиности"
 
-#: ../../main/samba/src/EBox/Samba.pm:315
+#: ../../main/samba/src/EBox/Samba.pm:317
 msgid ""
 "To make NSS use LDAP resolution for user and group accounts. Needed for "
 "Samba PDC configuration."
@@ -7862,26 +8557,26 @@ msgstr ""
 "Для того чтобы заставить NSS использовать разрешение LDAP для учётных "
 "записей пользователей и групп. Необходим для настройки Samba PDC."
 
-#: ../../main/samba/src/EBox/Samba.pm:321
+#: ../../main/samba/src/EBox/Samba.pm:323
 msgid "To add quota support to /home partition."
 msgstr "Добавить поддержку квот для раздела /home."
 
-#: ../../main/samba/src/EBox/Samba.pm:326
+#: ../../main/samba/src/EBox/Samba.pm:328
 msgid ""
 "To configure System Security Services Daemon to manage remote authentication "
 "mechanisms"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:332
+#: ../../main/samba/src/EBox/Samba.pm:334
 msgid "To enable extended attributes and acls."
 msgstr "Включить расширенные атрибуты и ACL."
 
-#: ../../main/samba/src/EBox/Samba.pm:360
+#: ../../main/samba/src/EBox/Samba.pm:362
 #, fuzzy
 msgid "Domain and File sharing protocols"
 msgstr "Протокол файловых ресурсов (Samba)"
 
-#: ../../main/samba/src/EBox/Samba.pm:392
+#: ../../main/samba/src/EBox/Samba.pm:399
 #, perl-brace-format
 msgid ""
 "Cannot enable Users and Computers module because your system does not have "
@@ -7890,7 +8585,7 @@ msgid ""
 "configured or waiting for a lease can solve this situation"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:396
+#: ../../main/samba/src/EBox/Samba.pm:403
 #, perl-brace-format
 msgid ""
 "Cannot enable Users and Computers module because your system does not have "
@@ -7898,49 +8593,45 @@ msgid ""
 "solve this situation"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:997
+#: ../../main/samba/src/EBox/Samba.pm:1025
 #, perl-brace-format
 msgid "Error setting security descriptor on share '{x}': {y}"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:1019
+#: ../../main/samba/src/EBox/Samba.pm:1047
 #, perl-brace-format
 msgid "Error setting security descriptor on file {x}{y}: {z}"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:1036
+#: ../../main/samba/src/EBox/Samba.pm:1070
 msgid ""
 "There were errors setting ACLs on samba shares, please check the zentyal log "
 "for details."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:1572
+#: ../../main/samba/src/EBox/Samba.pm:1610
 #, perl-brace-format
 msgid "Found {count} results for '{name}' group, expected only one."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:1913
+#: ../../main/samba/src/EBox/Samba.pm:1951
 #, fuzzy
 msgid "Manage"
 msgstr "Только управление"
 
-#: ../../main/samba/src/EBox/Samba.pm:1920
-msgid "Synchronization"
-msgstr "Синхронизация включена"
-
-#: ../../main/samba/src/EBox/Samba.pm:1928
+#: ../../main/samba/src/EBox/Samba.pm:1963
 #, fuzzy
 msgid "Configure mode"
 msgstr "Сконфигурированные"
 
-#: ../../main/samba/src/EBox/Samba.pm:2066
+#: ../../main/samba/src/EBox/Samba.pm:2101
 #, perl-brace-format
 msgid ""
 "To be able to restore this backup the hostname should be first set to {hn}. "
 "Otherwise samba data could not be restored."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2082
+#: ../../main/samba/src/EBox/Samba.pm:2117
 #, perl-brace-format
 msgid ""
 "Cannot restore because LDAP user {user} already exists as /etc/passwd user. "
@@ -7950,7 +8641,7 @@ msgstr ""
 "как /etc/passwd пользователь. Удалите или переименуйте этого пользователя и "
 "попробуйте ещё раз"
 
-#: ../../main/samba/src/EBox/Samba.pm:2099
+#: ../../main/samba/src/EBox/Samba.pm:2134
 #, perl-brace-format
 msgid ""
 "We cannot recreate the samba provision with the data from the backup because "
@@ -7958,77 +8649,106 @@ msgid ""
 "{ex}"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2109
+#: ../../main/samba/src/EBox/Samba.pm:2144
 msgid ""
 "Restore is only possible if the server is the unique domain controller of "
 "the forest"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2373
+#: ../../main/samba/src/EBox/Samba.pm:2408
 msgid ""
 "The hostname or domain cannot be changed if Zentyal is configured as "
 "additional domain controller."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2466
+#: ../../main/samba/src/EBox/Samba.pm:2501
 #, fuzzy
 msgid "Users data and Filesystem shares"
 msgstr "Использование файловой системы"
 
-#: ../../main/samba/src/EBox/Samba.pm:2609
+#: ../../main/samba/src/EBox/Samba.pm:2644
 #, fuzzy, perl-brace-format
 msgid "Address {addr} is already in use by the {type} {name}"
 msgstr "VPN адрес {addr} уже используется интерфейсом {iface}"
 
-#: ../../main/samba/src/EBox/Samba.pm:3077
+#: ../../main/samba/src/EBox/Samba.pm:3218
+#: ../../main/samba/src/EBox/Samba.pm:3238
+#: ../../main/samba/src/EBox/Samba.pm:3249
 msgid "Client address"
 msgstr "Адрес клиента"
 
-#: ../../main/samba/src/EBox/Samba.pm:3080
+#: ../../main/samba/src/EBox/Samba.pm:3221
 msgid "Resource"
 msgstr "Ресурс"
 
-#: ../../main/samba/src/EBox/Samba.pm:3084
+#: ../../main/samba/src/EBox/Samba.pm:3225
 msgid "Connect"
 msgstr "Подключить"
 
-#: ../../main/samba/src/EBox/Samba.pm:3085
+#: ../../main/samba/src/EBox/Samba.pm:3226
 msgid "Access to directory"
 msgstr "Доступ к каталогу"
 
-#: ../../main/samba/src/EBox/Samba.pm:3086
+#: ../../main/samba/src/EBox/Samba.pm:3227
 msgid "Read file"
 msgstr "Чтение файла"
 
-#: ../../main/samba/src/EBox/Samba.pm:3087
+#: ../../main/samba/src/EBox/Samba.pm:3228
 msgid "Write file"
 msgstr "Запись файла"
 
-#: ../../main/samba/src/EBox/Samba.pm:3088
+#: ../../main/samba/src/EBox/Samba.pm:3229
 msgid "Disconnect"
 msgstr "Отключить"
 
-#: ../../main/samba/src/EBox/Samba.pm:3089
+#: ../../main/samba/src/EBox/Samba.pm:3230
 #: ../../main/core/src/templates/ajax/viewer/file.mas:23
 #: ../../main/mail/src/templates/qmanager.mas:37
 msgid "Remove"
 msgstr "Удалить"
 
-#: ../../main/samba/src/EBox/Samba.pm:3090
+#: ../../main/samba/src/EBox/Samba.pm:3231
 msgid "Create directory"
 msgstr "Создать каталог"
 
-#: ../../main/samba/src/EBox/Samba.pm:3091
+#: ../../main/samba/src/EBox/Samba.pm:3232
 msgid "Remove directory"
 msgstr "Удалить каталог"
 
-#: ../../main/samba/src/EBox/Samba.pm:3092
+#: ../../main/samba/src/EBox/Samba.pm:3233
 msgid "Rename"
 msgstr "Переименовать"
 
-#: ../../main/samba/src/EBox/Samba.pm:3096
+#: ../../main/samba/src/EBox/Samba.pm:3240
+#: ../../main/samba/src/EBox/Samba.pm:3251
+msgid "File name"
+msgstr "Имя файла"
+
+#: ../../main/samba/src/EBox/Samba.pm:3241
+#: ../../main/samba/src/EBox/Samba.pm:3245
+msgid "Virus"
+msgstr "Вирус"
+
+#: ../../main/samba/src/EBox/Samba.pm:3252
+msgid "Quarantined file name"
+msgstr "Карантинное имя файла"
+
+#: ../../main/samba/src/EBox/Samba.pm:3253
+#: ../../main/samba/src/EBox/Samba.pm:3256
+msgid "Quarantine"
+msgstr "Крантин"
+
+#: ../../main/samba/src/EBox/Samba.pm:3259
 msgid "Samba access"
 msgstr "Доступ Samba"
+
+#: ../../main/samba/src/EBox/Samba.pm:3270
+msgid "Samba virus"
+msgstr "Вирус Samba"
+
+#: ../../main/samba/src/EBox/Samba.pm:3281
+msgid "Samba quarantine"
+msgstr "Карантин Samba"
 
 #: ../../main/mail/src/EBox/Mail.pm:148
 msgid "Generate mail aliases"
@@ -8129,7 +8849,7 @@ msgstr ""
 msgid "Outgoing Mail (Submission protocol)."
 msgstr ""
 
-#: ../../main/mail/src/EBox/Mail.pm:915
+#: ../../main/mail/src/EBox/Mail.pm:905
 msgid ""
 "Cannot use the hostname as mailname because it is not a fully qualified "
 "name. Please, define a custom server mailname"
@@ -8137,140 +8857,152 @@ msgstr ""
 "НЕ возможно использовать имя хоста как имя почтового сервера, так как оно не "
 "подходит. Пожалуста определите вручную имя почтового сервера"
 
-#: ../../main/mail/src/EBox/Mail.pm:920
+#: ../../main/mail/src/EBox/Mail.pm:910
 msgid "The mail name must be a fully qualified name"
 msgstr "Имя почтового сервера должно быть подходящим"
 
-#: ../../main/mail/src/EBox/Mail.pm:924 ../../main/mail/src/EBox/Mail.pm:935
-#: ../../main/mail/src/EBox/Mail.pm:943
+#: ../../main/mail/src/EBox/Mail.pm:914 ../../main/mail/src/EBox/Mail.pm:925
+#: ../../main/mail/src/EBox/Mail.pm:933
 msgid "Host mail name"
 msgstr "Имя почтового сервера"
 
-#: ../../main/mail/src/EBox/Mail.pm:938
+#: ../../main/mail/src/EBox/Mail.pm:928
 msgid "The mail name and virtual mail domain name are equal"
 msgstr "Имя почтового сервера и имя виртуального домена одинаковые"
 
-#: ../../main/mail/src/EBox/Mail.pm:1460
+#: ../../main/mail/src/EBox/Mail.pm:1496
 msgid "SMTP service"
 msgstr "Служба SMTP"
 
-#: ../../main/mail/src/EBox/Mail.pm:1467
+#: ../../main/mail/src/EBox/Mail.pm:1503
 msgid "POP3 service"
 msgstr "Служба POP3"
 
-#: ../../main/mail/src/EBox/Mail.pm:1473
+#: ../../main/mail/src/EBox/Mail.pm:1509
 msgid "POP3S service"
 msgstr "Служба POP3S"
 
-#: ../../main/mail/src/EBox/Mail.pm:1479
+#: ../../main/mail/src/EBox/Mail.pm:1515
 msgid "IMAP service"
 msgstr "Служба IMAP"
 
-#: ../../main/mail/src/EBox/Mail.pm:1485
+#: ../../main/mail/src/EBox/Mail.pm:1521
 msgid "IMAPS service"
 msgstr "Служба IMAPS"
 
-#: ../../main/mail/src/EBox/Mail.pm:1542
+#: ../../main/mail/src/EBox/Mail.pm:1565
+msgid "enabled"
+msgstr "включен"
+
+#: ../../main/mail/src/EBox/Mail.pm:1570
+msgid "Mail server's filter"
+msgstr "Фильтр почтовых серверов"
+
+#: ../../main/mail/src/EBox/Mail.pm:1579 ../../main/mail/src/EBox/Mail.pm:1586
+msgid "Filter type"
+msgstr "Тип фильтра"
+
+#: ../../main/mail/src/EBox/Mail.pm:1624
 msgid "Virtual Mail Domains"
 msgstr "Виртуальные почтовые домены"
 
-#: ../../main/mail/src/EBox/Mail.pm:1549
+#: ../../main/mail/src/EBox/Mail.pm:1631
 msgid "Greylist"
 msgstr "Серый список"
 
-#: ../../main/mail/src/EBox/Mail.pm:1556
+#: ../../main/mail/src/EBox/Mail.pm:1638
 #: ../../main/mail/src/EBox/Mail/CGI/QueueManager.pm:34
 #: ../../main/mail/src/EBox/Mail/CGI/QueueManager.pm:51
 msgid "Queue Management"
 msgstr "Управление очередью"
 
-#: ../../main/mail/src/EBox/Mail.pm:1583
+#: ../../main/mail/src/EBox/Mail.pm:1665
 #: ../../main/mail/src/templates/externalAccounts.mas:24
 msgid "Mail retrieval from external accounts"
 msgstr "Почта получаемая с внешних почтовых аккаунтов"
 
-#: ../../main/mail/src/EBox/Mail.pm:1598
+#: ../../main/mail/src/EBox/Mail.pm:1680
 msgid "Message ID"
 msgstr "ID сообщения"
 
-#: ../../main/mail/src/EBox/Mail.pm:1601
+#: ../../main/mail/src/EBox/Mail.pm:1683
 msgid "From hostname"
 msgstr "С хоста"
 
-#: ../../main/mail/src/EBox/Mail.pm:1602
+#: ../../main/mail/src/EBox/Mail.pm:1684
 msgid "From host ip"
 msgstr "С ip"
 
-#: ../../main/mail/src/EBox/Mail.pm:1603
+#: ../../main/mail/src/EBox/Mail.pm:1685
 #: ../../main/mail/src/templates/qmanager.mas:17
 msgid "Size (bytes)"
 msgstr "Размер (байт)"
 
-#: ../../main/mail/src/EBox/Mail.pm:1604
+#: ../../main/mail/src/EBox/Mail.pm:1686
 msgid "Relay"
 msgstr "Пересылка"
 
-#: ../../main/mail/src/EBox/Mail.pm:1605
+#: ../../main/mail/src/EBox/Mail.pm:1687
 msgid "Message type"
 msgstr "Тип сообщения"
 
-#: ../../main/mail/src/EBox/Mail.pm:1608
+#: ../../main/mail/src/EBox/Mail.pm:1690
 msgid "Additional Info"
 msgstr "Дополнительная информация"
 
-#: ../../main/mail/src/EBox/Mail.pm:1619
+#: ../../main/mail/src/EBox/Mail.pm:1701
 msgid "Successful messages"
 msgstr "Успешное сообщение"
 
-#: ../../main/mail/src/EBox/Mail.pm:1620
+#: ../../main/mail/src/EBox/Mail.pm:1702
 msgid "Maximum message size exceeded"
 msgstr "Превышен максимальный размер сообщения"
 
-#: ../../main/mail/src/EBox/Mail.pm:1621
+#: ../../main/mail/src/EBox/Mail.pm:1703
 msgid "User quota exceeded"
 msgstr "Превышена квота пользователя"
 
-#: ../../main/mail/src/EBox/Mail.pm:1622
+#: ../../main/mail/src/EBox/Mail.pm:1704
 msgid "Relay access denied"
 msgstr "Доступ к пересылке отклонен"
 
-#: ../../main/mail/src/EBox/Mail.pm:1623
+#: ../../main/mail/src/EBox/Mail.pm:1705
 msgid "Account does not exist"
 msgstr "Учетная запись не существует"
 
-#: ../../main/mail/src/EBox/Mail.pm:1624
+#: ../../main/mail/src/EBox/Mail.pm:1706
 msgid "Host unreachable"
 msgstr "Узел недоступен"
 
-#: ../../main/mail/src/EBox/Mail.pm:1625
+#: ../../main/mail/src/EBox/Mail.pm:1707
 msgid "Authentication error"
 msgstr "Ошибка аутентификации"
 
-#: ../../main/mail/src/EBox/Mail.pm:1626
+#: ../../main/mail/src/EBox/Mail.pm:1708
 msgid "Greylisted"
 msgstr "Серый список"
 
-#: ../../main/mail/src/EBox/Mail.pm:1627
+#: ../../main/mail/src/EBox/Mail.pm:1709
 msgid "Relay rejected by the smarthost"
 msgstr ""
 
-#: ../../main/mail/src/EBox/Mail.pm:1628
+#: ../../main/mail/src/EBox/Mail.pm:1710
 msgid "Other events"
 msgstr "Другие события"
 
-#: ../../main/mail/src/EBox/Mail.pm:1706
+#: ../../main/mail/src/EBox/Mail.pm:1788
 msgid "Mail SMTP server"
 msgstr "Почтовый SMTP сервер"
 
-#: ../../main/mail/src/EBox/Mail.pm:1714
+#: ../../main/mail/src/EBox/Mail.pm:1796
 msgid "Mail POP/IMAP server"
 msgstr "Почтовый POP/IMAP сервер"
 
-#: ../../main/mail/src/EBox/Mail.pm:1791
+#: ../../main/mail/src/EBox/Mail.pm:1873
 msgid "Mailboxes"
 msgstr "Почтовые ящики"
 
-#: ../../main/mail/src/EBox/Mail.pm:1840
+#: ../../main/mail/src/EBox/Mail.pm:1922
 #, fuzzy, perl-brace-format
 msgid "Address {addr} is in use as external alias"
 msgstr "VPN адрес {addr} уже используется интерфейсом {iface}"
@@ -8428,7 +9160,7 @@ msgstr "Настройки почтового сервера"
 msgid "To configure whitelist for greylisting"
 msgstr "Настройка белого списка для серого списка"
 
-#: ../../main/mail/src/EBox/Mail/Greylist.pm:243
+#: ../../main/mail/src/EBox/Mail/Greylist.pm:263
 msgid "Greylist service"
 msgstr "Служба серый список"
 
@@ -8456,6 +9188,12 @@ msgstr "Настройки почтовых фильтров"
 #: ../../main/mail/src/EBox/Mail/Model/SMTPOptions.pm:132
 msgid "custom"
 msgstr "пользовательский"
+
+#: ../../main/mail/src/EBox/Mail/Model/ExternalFilter.pm:199
+msgid ""
+"As long mailfilter module is enabled the mail server will use the filter it "
+"provides"
+msgstr ""
 
 #: ../../main/mail/src/EBox/Mail/Model/VDomains.pm:52
 msgid "Virtual domain aliases"
@@ -11337,7 +12075,7 @@ msgstr ""
 msgid "These rules are automatically added by the Zentyal services."
 msgstr "Эти правила автоматически добавляются службами Zentyal."
 
-#: ../../main/samba/stubs/shares.conf.mas:17
+#: ../../main/samba/stubs/shares.conf.mas:21
 msgid "Home Directories"
 msgstr "Домашние каталоги"
 
@@ -11773,15 +12511,16 @@ msgid "There are no messages in queue or the service is stopped"
 msgstr "Отсутствуют сообщения в очереди или служба остановлена"
 
 #: ../../main/mail/src/templates/createaccount.mas:42
-#, fuzzy
 msgid "Maildir size"
-msgstr "Размер файла"
+msgstr "Размер папки почты"
 
 #: ../../main/mail/src/templates/warnvdmdsize.mas:15
 msgid ""
 "The new maildir size is smaller than the oldest one, the following\n"
 "\tusers will surprass the new limitation:"
 msgstr ""
+"Новый размер почтовой папки меньше чем был ранее. Текущие пользователи\n"
+"\t будут удивлены новыми ограничениями:"
 
 #: ../../main/mail/src/templates/wizard/virtualdomain.mas:6
 msgid "Virtual mail domain"
@@ -11800,6 +12539,16 @@ msgid ""
 "The following settings only will take effect when the mail module is enabled"
 msgstr ""
 "Настройки вступят в действие только когда почтовый модуль будет включен"
+
+#~ msgid "bridge"
+#~ msgstr "мост"
+
+#, fuzzy
+#~ msgid "bonding mode"
+#~ msgstr "Сконфигурированные"
+
+#~ msgid "Synchronization"
+#~ msgstr "Синхронизация включена"
 
 #~ msgid "Gateways and Proxy"
 #~ msgstr "Шлюзы и прокси"
@@ -12165,497 +12914,6 @@ msgstr ""
 #~ "Этот пользователь имеет учетную запись jabber. Если пользователь сейчас "
 #~ "подключен, он будет продолжать оставаться на связи пока не потребуется "
 #~ "заново авторизоваться."
-
-#~ msgid "Signatures"
-#~ msgstr "Подписи"
-
-#~ msgid "Database Update Status"
-#~ msgstr "Статус обновления антивирусной базы"
-
-#~ msgid "Antivirus"
-#~ msgstr "Антивирус"
-
-#~ msgid ""
-#~ "The antivirus database has not been updated since the module was enabled."
-#~ msgstr "Антивирусная база не обновлялась с момента включения модуля."
-
-#~ msgid "The last update failed."
-#~ msgstr "Последнее обновление неудачно."
-
-#~ msgid "Last update successful."
-#~ msgstr "Последнее обновление прошло успешно."
-
-#~ msgid ""
-#~ "The antivirus module is not configured. Enable it first in Module Status "
-#~ "section."
-#~ msgstr ""
-#~ "Антивирусный модуль не настроен. Включите его в разделе Статус модулей."
-
-#~ msgid ""
-#~ "The antivirus module is not enabled. Enable it first to know the "
-#~ "antivirus status."
-#~ msgstr ""
-#~ "Модуль антивируса не включен. Чтобы узнать статус антивируса сначала "
-#~ "включите его."
-
-#~ msgid "Unknown event {event}."
-#~ msgstr "Неизвестное событие {event}."
-
-#~ msgid " To configure clamd daemon"
-#~ msgstr " Настроить демона clamd"
-
-#~ msgid "To schedule the launch of the updater"
-#~ msgstr "Планирование запуска обновлений"
-
-#~ msgid "Custom {app} profile configuration for {bin} binary"
-#~ msgstr ""
-#~ "Конфигурация пользовательского {app} профиля для {bin} бинарных приложений"
-
-#~ msgid "Disable {app} profile for {bin} binary"
-#~ msgstr "Отключить {app} профиль для {bin} бинарных приложений"
-
-#~ msgid "Success"
-#~ msgstr "Удачно"
-
-#~ msgid "Failure"
-#~ msgstr "Сбой"
-
-#~ msgid "Antivirus DB updates"
-#~ msgstr "Обновления БД антивируса"
-
-#~ msgid "Mail Filter"
-#~ msgstr "Почтовый фильтр"
-
-#~ msgid "Add clamav user to amavis group"
-#~ msgstr "Добавить пользователя clamav в группу amavis"
-
-#~ msgid "Clamav need access to amavis fields to properly scan mail"
-#~ msgstr "Clamav необходим доступ к amavis полям, чтобы сканировать почту"
-
-#~ msgid "Add clamav user to p3scan group"
-#~ msgstr "Добавить пользователя clamav в группу p3scan"
-
-#~ msgid "Clamav need access to p3scan group to properly scan in the POP Proxy"
-#~ msgstr ""
-#~ "Clamav необходим доступ к p3scan полям, чтобы сканировать POP прокси"
-
-#~ msgid "Add spam and ham system users"
-#~ msgstr "Добавить системных пользователей spam и ham"
-
-#~ msgid ""
-#~ "This users are for the email accounts used for training the bayesian "
-#~ "filter"
-#~ msgstr ""
-#~ "Эти пользователи электронной почты используются для обучения байесовского "
-#~ "фильтра"
-
-#~ msgid "Update LDAP"
-#~ msgstr "Обновить LDAP"
-
-#~ msgid "Add amavis specific classes and fields"
-#~ msgstr "Добавить определенные классы и поля amavis"
-
-#~ msgid ""
-#~ "Mail server has a custom filter set, unset it before enabling Zentyal "
-#~ "Mail Filter module"
-#~ msgstr ""
-#~ "Почтовый сервер имеет пользовательский набор фильтров, сбросьте его "
-#~ "прежде, чем включить модуль Zentyal Mail Filter"
-
-#~ msgid "Cannot proceed because the filter is in use"
-#~ msgstr "Не воможно фильтр используется"
-
-#~ msgid "Mail filter"
-#~ msgstr "Почтовый фильтр"
-
-#~ msgid "Sender address"
-#~ msgstr "Адрес отправителя"
-
-#~ msgid "Recipient address"
-#~ msgstr "Адрес получателя"
-
-#~ msgid "Spam hits"
-#~ msgstr "Спам хиты"
-
-#~ msgid "Bad header found"
-#~ msgstr "Обнаружен плохой заголовок"
-
-#~ msgid "Spam found"
-#~ msgstr "Обнаружен спам"
-
-#~ msgid "Forbidden attached file found"
-#~ msgstr "Обнаружен запрещенный прикрепленный файл"
-
-#~ msgid "Address in blacklist found"
-#~ msgstr "Обнаружен адрес из черного списка"
-
-#~ msgid "Virus found"
-#~ msgstr "Обнаружен вирус"
-
-#~ msgid "Clean message"
-#~ msgstr "Чистое сообщение"
-
-#, fuzzy
-#~ msgid "Unable to reinject in the mail server"
-#~ msgstr "Невозможно переподключится к почтовому серверу"
-
-#~ msgid "SMTP filter"
-#~ msgstr "SMTP фильтр"
-
-#~ msgid "SMTP Mail Filter"
-#~ msgstr "Почтовый фильтр SMTP"
-
-#~ msgid "Antispam"
-#~ msgstr "Антиспам"
-
-#~ msgid "Files ACL"
-#~ msgstr "Файлы ACL"
-
-#~ msgid "email address"
-#~ msgstr "почтовый адрес"
-
-#~ msgid ""
-#~ "The sender ought be either an email address or a domain name prefixed "
-#~ "with '@'"
-#~ msgstr ""
-#~ "Отправитель должен быть либо почтовым адресом либо именем домена с "
-#~ "префиксом '@'"
-
-#~ msgid "Write down a decimal number"
-#~ msgstr "Напишите десятичное число"
-
-#~ msgid "Only non-zero positive numbers are allowed"
-#~ msgstr "Разрешено ненулевое положительное число"
-
-#~ msgid "Write down a number lesser than {m}"
-#~ msgstr "Напишите число меньшее {m}"
-
-#~ msgid "Write down a number greater  than {m}"
-#~ msgstr "Напишите число большее  чем {m}"
-
-#~ msgid "MIME type"
-#~ msgstr "MIME тип"
-
-#~ msgid "file extension"
-#~ msgstr "файловые расширения"
-
-#~ msgid "Pass"
-#~ msgstr "Разрешить"
-
-#~ msgid "Notify sender server"
-#~ msgstr "Уведомлять сервер отправителя "
-
-#~ msgid "Notify mail sender account"
-#~ msgstr "Уведомление учетной записи отправителя электронной почты "
-
-#~ msgid "Drop silently"
-#~ msgstr "Игнорирование без уведомлений"
-
-#~ msgid "Mailfilter's policy"
-#~ msgstr "Политика почтовых фильтров"
-
-#~ msgid "To configure amavis"
-#~ msgstr "Настроить amavis"
-
-#~ msgid "Zentyal internal mail filter"
-#~ msgstr "Zentyal внутренний почтовый фильтр"
-
-#~ msgid "SMTP filter proxy"
-#~ msgstr "Прокси фильтр SMTP"
-
-#~ msgid "Virtual mail domain {vd} does not exist"
-#~ msgstr "Виртуальный почтовый домен {vd} не существует"
-
-#~ msgid " To configure spamassassin daemon"
-#~ msgstr " Настройка spamassassin демона"
-
-#~ msgid "Spam threshold"
-#~ msgstr "Порог спама"
-
-#~ msgid "It must be a number(decimal point allowed)"
-#~ msgstr "Это должно быть числом (десятичная точка разрешена)"
-
-#~ msgid "The spam's threshold cannot be higher than its autolearn threshold"
-#~ msgstr "Порог спама не может быть выше порога авто-обучения"
-
-#~ msgid ""
-#~ "The spam's threshold cannot be lower or equal than its ham's autolearn "
-#~ "threshold"
-#~ msgstr ""
-#~ "Порог спама не может быть равным или меньше порога авто-обучения ham"
-
-#~ msgid ""
-#~ "Cannot learn because bayesian filter is disabled in the current "
-#~ "configuration. In order to be able to learn enable the bayesian filter "
-#~ "and save changes"
-#~ msgstr ""
-#~ "Невозможно обучение так как Байесовский фильтр отключен в текущей "
-#~ "конфигурации. Для обучение необходимо включить Байесовский фильтр и "
-#~ "записать изменение"
-
-#~ msgid "Accounts from the domain {d} cannot train the bayesian filter"
-#~ msgstr "Аккаунты из домена {d} не могут обучить байесовский фильтр"
-
-#~ msgid "External connections"
-#~ msgstr "Внешние соединения"
-
-#~ msgid "Attached Files Filter"
-#~ msgstr "Фильтр почтовых вложений"
-
-#~ msgid ""
-#~ "Filter mail messages according attached files. The transparent POP proxy "
-#~ "only filters by extension"
-#~ msgstr ""
-#~ "Фильтр почтовых сообщений содержащих вложения. В прозрачном POP прокси, "
-#~ "только фильтр по расширению"
-
-#~ msgid "Use virus filtering"
-#~ msgstr "Использовать фильтрацию вирусов"
-
-#~ msgid "Use spam filtering"
-#~ msgstr "Использовать фильтрацию спама"
-
-#~ msgid "default"
-#~ msgstr "по умолчанию"
-
-#~ msgid "custom threshold"
-#~ msgstr "пользовательский порог"
-
-#~ msgid "Antispam sender policy"
-#~ msgstr "Политика антиспам отправителей"
-
-#, fuzzy
-#~ msgid "Virtual Domains specific policies"
-#~ msgstr "Псевдонимы виртуального домена"
-
-#~ msgid "virtual domain policy"
-#~ msgstr "политика виртуальных доменов"
-
-#~ msgid ""
-#~ "There are no virtual mail domains managed by this server. You can create "
-#~ "some in the {openA}virtual domains mail page{closeA}."
-#~ msgstr ""
-#~ "Нет виртуальных доменов управляемых этим сервером. Вы должны создать хотя "
-#~ "бы один в {openA}virtual domains mail page{closeA}."
-
-#~ msgid "The score threshold to mark a message as spam"
-#~ msgstr "Порог для пометки сообщения как спам"
-
-#~ msgid "Spam subject tag"
-#~ msgstr "Признак спама"
-
-#~ msgid "Tag which will be added to the spam mail subject"
-#~ msgstr "Признак спама, который будет добавлен в тему письма"
-
-#~ msgid "Use Bayesian classifier"
-#~ msgstr "Использовать классификатор Байеса"
-
-#~ msgid "Auto-whitelist"
-#~ msgstr "Автоматический белый список"
-
-#~ msgid "Change the score of mail according to the sender history"
-#~ msgstr "Изменение баллов почты согласно истории отправителя"
-
-#~ msgid "Auto-learn"
-#~ msgstr "Авто-обучение"
-
-#~ msgid "Feedback the learning system with messages that reach the threshold"
-#~ msgstr "Обратная связь между системой обучения с балами сообщения"
-
-#~ msgid "Autolearn spam threshold"
-#~ msgstr "Авто-обучения порога спама"
-
-#~ msgid ""
-#~ "Spam messages with a score equal or greater than this threshold will be "
-#~ "added to the learning system "
-#~ msgstr ""
-#~ "Спам балл сообщения равен или превышает порог и будет добавлено в систему "
-#~ "обучения "
-
-#~ msgid "Autolearn ham threshold"
-#~ msgstr "Авто-обучение ham порог"
-
-#~ msgid ""
-#~ "Ham messages with a score below this threshold will be added to the "
-#~ "learning system"
-#~ msgstr "Ham балл сообщения ниже порога будет добавлен в обучающуюся систему"
-
-#~ msgid "Antispam configuration"
-#~ msgstr "Настройка антиспам"
-
-#~ msgid ""
-#~ "You must define autolearn spam threshold when autolearn option is active"
-#~ msgstr ""
-#~ "Необходимо определить порог спама, когда вы включаете опцию авто-обучения"
-
-#~ msgid ""
-#~ "You must define autolearn ham threshold when autolearn option is active"
-#~ msgstr ""
-#~ "Необходимо определить порог ham, когда вы включаете опцию авто-обучения"
-
-#~ msgid ""
-#~ "The spam's autolearn threshold cannot be lower than the default spam's "
-#~ "treshold "
-#~ msgstr ""
-#~ "Порог спама авто-обучения не должно быть ниже порога спама по умолчанию "
-
-#~ msgid ""
-#~ "The ham's autolearn threshold canot be higher or equal than the default "
-#~ "spam level"
-#~ msgstr ""
-#~ "Порог ham авто-обучения не должен быть ниже порога спам по умолчанию"
-
-#~ msgid "External mail domain"
-#~ msgstr "Внешний почтовый домен"
-
-#~ msgid "Allow connection"
-#~ msgstr "Разрешить соединения"
-
-#~ msgid "External mail domains"
-#~ msgstr "Внешние почтовые домены"
-
-#~ msgid "external mail domain"
-#~ msgstr "внешний почтовый домен"
-
-#~ msgid ""
-#~ "Here you can specify which external mail domains can connect to the mail "
-#~ "filter"
-#~ msgstr ""
-#~ "Здесь можно указать, какие внешние домены могут подключаться к почтовому "
-#~ "фильтру"
-
-#~ msgid "{d} is a internal Zentyal virtual main domain"
-#~ msgstr "{d} внутренний виртуальный домен Zentyal"
-
-#~ msgid "External mail server"
-#~ msgstr "Внешний почтовый сервер"
-
-#~ msgid "IP address of the server"
-#~ msgstr "IP адрес сервера"
-
-#~ msgid "External mail servers"
-#~ msgstr "Внешние почтовые сервера"
-
-#~ msgid "external mail server"
-#~ msgstr "внешний почтовый сервер"
-
-#~ msgid ""
-#~ "Here you can specify which external mail servers can connect to the mail "
-#~ "filter"
-#~ msgstr ""
-#~ "Здесь можно указать, какие внешние почтовые сервера могут соединяться с "
-#~ "почтовым фильтром"
-
-#~ msgid "Invalid external MTA {mta}. Local network addresses are not allowed"
-#~ msgstr ""
-#~ "Не действительный внешний MTA {mta}. Локальные сетевые адреса не разрешены"
-
-#~ msgid "Antivirus enabled"
-#~ msgstr "Антивирус включен"
-
-#~ msgid "Antispam enabled"
-#~ msgstr "Антиспам включен"
-
-#~ msgid "Service's port"
-#~ msgstr "Порт службы"
-
-#~ msgid "Notify of non-spam problematic messages"
-#~ msgstr "Уведомление проблемное сообщение не спам"
-
-#~ msgid "The port {port} is already used by module {mod}"
-#~ msgstr "Порт {port} уже используется модулем {mod}"
-
-#~ msgid "Mail sender"
-#~ msgstr "Почтовый отправитель"
-
-#~ msgid "Policy"
-#~ msgstr "Политика"
-
-#~ msgid "Sender policy for virtual domain"
-#~ msgstr "Политика для отправителей виртуального домена"
-
-#~ msgid "sender policy"
-#~ msgstr "политика отправителей"
-
-#~ msgid "whitelist"
-#~ msgstr "белый список"
-
-#~ msgid "blacklist"
-#~ msgstr "черный список"
-
-#~ msgid "process"
-#~ msgstr "процесс"
-
-#~ msgid "MIME Type"
-#~ msgstr "MIME тип"
-
-#~ msgid "Allow"
-#~ msgstr "Разрешить"
-
-#~ msgid "MIME types"
-#~ msgstr "MIME типы"
-
-#~ msgid ""
-#~ "MIME types which are not listed below are allowed. MIME types aren't used "
-#~ "by POP transparent proxy"
-#~ msgstr ""
-#~ "MIME типы не перечисленные ниже разрешены. MIME типы не используются POP "
-#~ "прозрачном прокси"
-
-#~ msgid "File extension"
-#~ msgstr "Расширение файла"
-
-#~ msgid "File extensions"
-#~ msgstr "Файловые расширения"
-
-#~ msgid "Extensions which are not listed below are allowed"
-#~ msgstr "Расширение не перечисленные ниже разрешены"
-
-#~ msgid "Mailbox"
-#~ msgstr "Почтовый ящик"
-
-#~ msgid "Mailbox contains"
-#~ msgstr "Содержимое почтового ящика"
-
-#~ msgid "Train bayesian spam filter"
-#~ msgstr "Обучать байесовский спам фильтр"
-
-#~ msgid "Learned from messages"
-#~ msgstr "Обучение по сообщениям"
-
-#~ msgid "Train"
-#~ msgstr "Учить"
-
-#~ msgid "spam"
-#~ msgstr "спам"
-
-#~ msgid "ham"
-#~ msgstr "ham"
-
-#~ msgid "Invalid mailbox type: {type}"
-#~ msgstr "Неправильный тип почтового ящика: {type}"
-
-#~ msgid "Sender policy"
-#~ msgstr "Политика отправителей"
-
-#~ msgid "Virus policy"
-#~ msgstr "Политика вирусов"
-
-#~ msgid "Spam policy"
-#~ msgstr "Политика спам"
-
-#~ msgid "Bounce policy will be ignored for high-score spam messages"
-#~ msgstr ""
-#~ "Политики фильтрации будут игнорироваться для спама с высокой оценкой"
-
-#~ msgid "Banned files policy"
-#~ msgstr "Политика блокирования файлов"
-
-#~ msgid "Bad header policy"
-#~ msgstr "Политика плохих заголовков"
-
-#~ msgid "Filter Policies"
-#~ msgstr "Политики фильтра"
 
 #, fuzzy
 #~ msgid "L2TP connections"
@@ -13059,9 +13317,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Если служба - любая , то должен быть предоставлен источник или назначение"
 
-#~ msgid "Filter type"
-#~ msgstr "Тип фильтра"
-
 #~ msgid "Lowest priotiry: 7 Highest priority: 0"
 #~ msgstr "Низший приоритет: 7 Высший приоритет: 0"
 
@@ -13224,14 +13479,6 @@ msgstr ""
 #~ msgid "PowerShell"
 #~ msgstr "Безопасносная оболочка"
 
-#~ msgid "Antivirus default settings"
-#~ msgstr "Настройки антивируса по умолчанию"
-
-#, fuzzy
-#~ msgid ""
-#~ "Zentyal antivirus module must be installed and enabled to use this feature"
-#~ msgstr "{pkg} должен быть установлен для использования этой функции"
-
 #, fuzzy
 #~ msgid "Group Policy Links"
 #~ msgstr "Групповая' политика"
@@ -13254,12 +13501,6 @@ msgstr ""
 #~ "order to use it."
 #~ msgstr ""
 #~ "Включите почтовый модуль, в модуле состояния, для его использования."
-
-#~ msgid "Samba shares antivirus exceptions"
-#~ msgstr "Исключения антивируса для ресурсов Samba"
-
-#~ msgid "Add exceptions to the default antivirus settings"
-#~ msgstr "Добавить исключения в настройки по умолчанию антивируса"
 
 #, fuzzy
 #~ msgid "Server mode"
@@ -13366,24 +13607,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Вы используете частичный режим резервного копирования и эта копия сделана "
 #~ "в не-частичном режиме"
-
-#~ msgid "File name"
-#~ msgstr "Имя файла"
-
-#~ msgid "Virus"
-#~ msgstr "Вирус"
-
-#~ msgid "Quarantined file name"
-#~ msgstr "Карантинное имя файла"
-
-#~ msgid "Quarantine"
-#~ msgstr "Крантин"
-
-#~ msgid "Samba virus"
-#~ msgstr "Вирус Samba"
-
-#~ msgid "Samba quarantine"
-#~ msgstr "Карантин Samba"
 
 #~ msgid "HTTP Proxy"
 #~ msgstr "HTTP прокси"
@@ -14035,12 +14258,6 @@ msgstr ""
 #~ "You can exempt some addresses from transparent proxy. The domains will be "
 #~ "resolved at saving changes process."
 #~ msgstr "Вы можете запретить кэширование для некоторых адресов"
-
-#~ msgid "enabled"
-#~ msgstr "включен"
-
-#~ msgid "Mail server's filter"
-#~ msgstr "Фильтр почтовых серверов"
 
 #~ msgid "User account"
 #~ msgstr "Учётная запись пользователя"

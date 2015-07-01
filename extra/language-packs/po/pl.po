@@ -144,6 +144,8 @@ msgstr "Klient {name}"
 #: ../../main/core/src/templates/enable.mas:20
 #: ../../main/openchange/src/templates/openchange.mas:14
 #: ../../main/openchange/src/templates/openchange.mas:15
+#: ../../main/openchange/src/templates/openchange_group.mas:14
+#: ../../main/openchange/src/templates/openchange_group.mas:15
 #, fuzzy
 msgid "Enabled"
 msgstr ""
@@ -181,13 +183,15 @@ msgstr ""
 #: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:85
 #: ../../main/core/src/EBox/RemoteServices/Model/QAUpdatesInfo.pm:86
 #: ../../main/core/src/EBox/SysInfo.pm:480
-#: ../../main/core/src/EBox/RemoteServices.pm:1306
+#: ../../main/core/src/EBox/RemoteServices.pm:1310
 #: ../../main/samba/src/EBox/Samba/Model/AccountSettings.pm:64
 #: ../../main/mail/src/EBox/Mail/Model/VDomainSettings.pm:56
 #: ../../main/core/src/templates/enable.mas:19
 #: ../../main/core/src/templates/enable.mas:20
 #: ../../main/openchange/src/templates/openchange.mas:14
 #: ../../main/openchange/src/templates/openchange.mas:15
+#: ../../main/openchange/src/templates/openchange_group.mas:14
+#: ../../main/openchange/src/templates/openchange_group.mas:15
 #: ../../main/samba/src/templates/edituser.mas:279
 #, fuzzy
 msgid "Disabled"
@@ -799,7 +803,7 @@ msgstr "Podstawowy serwer DNS"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Model/ServerConfiguration.pm:161
 #, fuzzy
-msgid "Secod nameserver"
+msgid "Second nameserver"
 msgstr "Pomocniczy serwer DNS"
 
 #: ../../main/openvpn/src/EBox/OpenVPN/Model/ServerConfiguration.pm:167
@@ -1058,9 +1062,9 @@ msgstr "demony OpenVPN"
 #: ../../main/dhcp/src/EBox/DHCP.pm:979
 #: ../../main/core/src/EBox/SysInfo/Model/DateTime.pm:51
 #: ../../main/firewall/src/EBox/Firewall.pm:787
-#: ../../main/samba/src/EBox/Samba.pm:3217
-#: ../../main/samba/src/EBox/Samba.pm:3237
-#: ../../main/samba/src/EBox/Samba.pm:3248
+#: ../../main/samba/src/EBox/Samba.pm:3218
+#: ../../main/samba/src/EBox/Samba.pm:3238
+#: ../../main/samba/src/EBox/Samba.pm:3249
 #: ../../main/mail/src/EBox/Mail.pm:1679
 #: ../../main/ca/src/templates/index.mas:99
 #: ../../main/core/src/templates/finish.mas:32
@@ -1085,7 +1089,7 @@ msgstr "Zdarzenie"
 
 #: ../../main/openvpn/src/EBox/OpenVPN.pm:1482
 #: ../../main/firewall/src/EBox/Firewall/Model/EBoxServicesRuleTable.pm:133
-#: ../../main/samba/src/EBox/Samba.pm:3242
+#: ../../main/samba/src/EBox/Samba.pm:3243
 #: ../../main/core/src/templates/report/diskUsage.mas:63
 #: ../../main/core/src/templates/report/raid.mas:127
 #: ../../main/core/src/templates/remoteservices/index.mas:67
@@ -1210,7 +1214,7 @@ msgstr "hostname"
 
 #: ../../main/dns/src/EBox/DNS.pm:1694
 #: ../../main/dns/src/EBox/DNS/Model/AliasTable.pm:204
-#: ../../main/samba/src/EBox/Samba.pm:2633
+#: ../../main/samba/src/EBox/Samba.pm:2634
 msgid "alias"
 msgstr "alias"
 
@@ -1314,7 +1318,7 @@ msgstr ""
 #: ../../main/dns/src/EBox/DNS/Model/Settings.pm:84
 #: ../../main/software/src/EBox/Software.pm:670
 #: ../../main/samba/src/EBox/Samba/Model/DomainSettings.pm:199
-#: ../../main/samba/src/EBox/Samba.pm:1938
+#: ../../main/samba/src/EBox/Samba.pm:1939
 #: ../../main/mail/src/EBox/Mail/Model/VDomains.pm:66
 #: ../../main/software/src/templates/config.mas:14
 msgid "Settings"
@@ -1575,7 +1579,7 @@ msgstr ""
 #: ../../main/core/src/EBox/Logs/Model/SelectLog.pm:141
 #: ../../main/core/src/EBox/Logs/Model/ConfigureLogs.pm:343
 #: ../../main/samba/src/EBox/Samba/Model/DomainSettings.pm:198
-#: ../../main/samba/src/EBox/Samba.pm:1932
+#: ../../main/samba/src/EBox/Samba.pm:1933
 #: ../../main/mail/src/EBox/Mail/Model/ExternalAliases.pm:61
 msgid "Domain"
 msgstr "Domena"
@@ -1761,9 +1765,9 @@ msgstr "Jeśli włączono dostęp anonimowy, kontrola dostępu została wyłącz
 #: ../../main/core/src/EBox/AuditLogging.pm:113
 #: ../../main/core/src/EBox/AuditLogging.pm:143
 #: ../../main/samba/src/EBox/Samba/Model/SambaSharePermissions.pm:304
-#: ../../main/samba/src/EBox/Samba.pm:3219
-#: ../../main/samba/src/EBox/Samba.pm:3239
-#: ../../main/samba/src/EBox/Samba.pm:3250
+#: ../../main/samba/src/EBox/Samba.pm:3220
+#: ../../main/samba/src/EBox/Samba.pm:3240
+#: ../../main/samba/src/EBox/Samba.pm:3251
 #: ../../main/mail/src/EBox/Mail/Model/SMTPOptions.pm:99
 #: ../../main/samba/src/templates/addobject.mas:10
 #: ../../main/samba/src/templates/ajax/viewer/shareViewer.mas:8
@@ -2233,7 +2237,7 @@ msgstr ""
 #: ../../main/core/src/EBox/Model/Template.pm:154
 #: ../../main/core/src/EBox/Model/Template.pm:173
 #: ../../main/core/src/EBox/AuditLogging.pm:127
-#: ../../main/samba/src/EBox/Samba.pm:3220
+#: ../../main/samba/src/EBox/Samba.pm:3221
 #: ../../main/dns/src/templates/index.mas:22
 #: ../../main/dns/src/templates/edit.mas:20
 #: ../../main/network/src/templates/ifaces.mas:112
@@ -2984,8 +2988,8 @@ msgid "Notify of non-spam problematic messages"
 msgstr "Powiadom o problemach z wiadomościami"
 
 #: ../../main/mailfilter/src/EBox/MailFilter/Model/AmavisConfiguration.pm:90
-#: ../../main/core/src/EBox/RemoteServices.pm:505
-#: ../../main/core/src/EBox/RemoteServices.pm:546
+#: ../../main/core/src/EBox/RemoteServices.pm:508
+#: ../../main/core/src/EBox/RemoteServices.pm:549
 msgid "mail address"
 msgstr "adres mailowy"
 
@@ -3361,8 +3365,8 @@ msgstr "Port {port} jest już używany przez moduł {mod}"
 
 #: ../../main/network/src/EBox/Network/Model/DNSResolver.pm:268
 #: ../../main/core/src/EBox/RemoteServices.pm:72
-#: ../../main/core/src/EBox/RemoteServices.pm:780
-#: ../../main/core/src/EBox/RemoteServices.pm:1319
+#: ../../main/core/src/EBox/RemoteServices.pm:783
+#: ../../main/core/src/EBox/RemoteServices.pm:1323
 #: ../../main/core/src/EBox/Backup.pm:460
 #: ../../main/common/src/EBox/Exceptions/UnwillingToPerform.pm:36
 msgid "Unknown"
@@ -4115,7 +4119,7 @@ msgstr "Aby ustawić Zentyal jako serwer WINS, należy włączyć moduł Samba"
 #: ../../main/dhcp/src/EBox/DHCP/Model/Options.pm:388
 #: ../../main/dhcp/src/EBox/DHCP/Model/Options.pm:421
 #: ../../main/core/src/EBox/CGI/Search.pm:48
-#: ../../main/core/src/EBox/RemoteServices.pm:1306
+#: ../../main/core/src/EBox/RemoteServices.pm:1310
 #: ../../main/mail/src/EBox/Mail/Model/SMTPOptions.pm:89
 msgid "None"
 msgstr "Żaden"
@@ -4542,7 +4546,7 @@ msgstr "Nie odnaleziono strony"
 #: ../../main/core/src/EBox/RemoteServices/RESTResource/ConfBackup.pm:194
 #: ../../main/core/src/EBox/RemoteServices/CGI/Backup/Confirm.pm:36
 #: ../../main/core/src/EBox/SysInfo/CGI/ConfirmBackup.pm:176
-#: ../../main/core/src/EBox/RemoteServices.pm:1355
+#: ../../main/core/src/EBox/RemoteServices.pm:1359
 #, fuzzy
 msgid "Configuration backup"
 msgstr ""
@@ -5124,7 +5128,7 @@ msgid "Module Status"
 msgstr "Moduły"
 
 #: ../../main/core/src/EBox/SysInfo.pm:105
-#: ../../main/core/src/EBox/RemoteServices.pm:1214
+#: ../../main/core/src/EBox/RemoteServices.pm:1218
 msgid "System"
 msgstr "System"
 
@@ -5560,9 +5564,9 @@ msgstr ""
 #: ../../main/core/src/EBox/SysInfo/CGI/SoftwareUpdates.pm:121
 msgid ""
 "Warning: These are untested community updates that might harm your system. "
-"In production environments we recommend using the Professional, Business or "
-"Premium Editions: commercial Zentyal Server editions fully supported by "
-"Zentyal S.L. and Canonical/Ubuntu."
+"In production environments we recommend using the Commercial Edition: "
+"commercial Zentyal Server editions fully supported by Zentyal S.L. and "
+"Canonical/Ubuntu."
 msgstr ""
 
 #: ../../main/core/src/EBox/SysInfo/CGI/SoftwareUpdates.pm:126
@@ -5823,6 +5827,7 @@ msgstr ""
 #: ../../main/core/src/templates/dataInUse.mas:33
 #: ../../main/core/src/templates/dataInUse.mas:38
 #: ../../main/openchange/src/templates/openchange.mas:24
+#: ../../main/openchange/src/templates/openchange_group.mas:24
 #: ../../main/samba/src/templates/editgroup.mas:38
 #: ../../main/samba/src/templates/samba.mas:29
 #: ../../main/samba/src/templates/edituser.mas:69
@@ -6072,6 +6077,11 @@ msgstr ""
 
 #: ../../main/core/src/EBox/RemoteServices.pm:78
 #, fuzzy
+msgid "Commercial"
+msgstr "Opcje ogólne"
+
+#: ../../main/core/src/EBox/RemoteServices.pm:79
+#, fuzzy
 msgid "Enterprise"
 msgstr ""
 "#-#-#-#-#  pl.po (ebox-usersandgroups 0.12)  #-#-#-#-#\n"
@@ -6079,57 +6089,57 @@ msgstr ""
 "#-#-#-#-#  pl.po (ebox 0.12)  #-#-#-#-#\n"
 "Wprowadź"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:79
-#: ../../main/core/src/EBox/RemoteServices.pm:1324
+#: ../../main/core/src/EBox/RemoteServices.pm:80
+#: ../../main/core/src/EBox/RemoteServices.pm:1328
 msgid "Premium"
 msgstr ""
 
-#: ../../main/core/src/EBox/RemoteServices.pm:104
+#: ../../main/core/src/EBox/RemoteServices.pm:106
 #, fuzzy
 msgid "Zentyal Remote Client"
 msgstr "Komponenty Zentyala"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1012
+#: ../../main/core/src/EBox/RemoteServices.pm:1016
 #, perl-brace-format
 msgid "This is a Zentyal Server {edition} edition."
 msgstr ""
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1219
+#: ../../main/core/src/EBox/RemoteServices.pm:1223
 #, fuzzy
 msgid "Server Edition"
 msgstr "Tworzenie serwera"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1236
+#: ../../main/core/src/EBox/RemoteServices.pm:1240
 msgid "Not subscribed"
 msgstr "nie subskrybuj"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1238
+#: ../../main/core/src/EBox/RemoteServices.pm:1242
 msgid "Subscribed"
 msgstr "Subskrybowane"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1288
+#: ../../main/core/src/EBox/RemoteServices.pm:1292
 #, fuzzy
 msgid "Server Information"
 msgstr "Informacja ogólna"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1308
+#: ../../main/core/src/EBox/RemoteServices.pm:1312
 #, perl-brace-format
 msgid "Disabled - {oh}Enable{ch}"
 msgstr ""
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1321
+#: ../../main/core/src/EBox/RemoteServices.pm:1325
 msgid "Standard 2 days"
 msgstr ""
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1322
+#: ../../main/core/src/EBox/RemoteServices.pm:1326
 msgid "Standard 1 day"
 msgstr ""
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1323
+#: ../../main/core/src/EBox/RemoteServices.pm:1327
 msgid "Standard 4 hours"
 msgstr ""
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1327
+#: ../../main/core/src/EBox/RemoteServices.pm:1331
 #, fuzzy
 msgid "Configuration backup enabled"
 msgstr ""
@@ -6138,43 +6148,43 @@ msgstr ""
 "#-#-#-#-#  pl.po (ebox 0.12)  #-#-#-#-#\n"
 "Kopia zapasowa konfiguracji"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1332
+#: ../../main/core/src/EBox/RemoteServices.pm:1336
 #: ../../main/mail/src/EBox/Mail/Model/ExternalFilter.pm:155
 msgid "none"
 msgstr "brak"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1335
+#: ../../main/core/src/EBox/RemoteServices.pm:1339
 msgid "unknown"
 msgstr "Nieznany"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1337
+#: ../../main/core/src/EBox/RemoteServices.pm:1341
 #, perl-brace-format
 msgid "- Latest conf backup: {date}"
 msgstr ""
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1339
+#: ../../main/core/src/EBox/RemoteServices.pm:1343
 #, perl-brace-format
 msgid "{oh}Register to store your backups in the cloud{ch}"
 msgstr ""
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1344
+#: ../../main/core/src/EBox/RemoteServices.pm:1348
 #: ../../main/core/src/templates/remoteservices/index.mas:35
 #: ../../main/core/src/templates/remoteservices/index.mas:83
 #, fuzzy
 msgid "Server name"
 msgstr "Serwer {name}"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1346
+#: ../../main/core/src/EBox/RemoteServices.pm:1350
 #: ../../main/core/src/templates/remoteservices/index.mas:84
 #, fuzzy
 msgid "Server edition"
 msgstr "Tworzenie serwera"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1349
+#: ../../main/core/src/EBox/RemoteServices.pm:1353
 msgid "Technical support"
 msgstr "Wsparcie techniczne"
 
-#: ../../main/core/src/EBox/RemoteServices.pm:1352
+#: ../../main/core/src/EBox/RemoteServices.pm:1356
 #, fuzzy
 msgid "Registered e-mail"
 msgstr "Zarejestrować"
@@ -6544,11 +6554,13 @@ msgid "user"
 msgstr "użytkownik"
 
 #: ../../main/openchange/src/EBox/OpenChange/CGI/OpenChangeUserOptions.pm:57
+#: ../../main/openchange/src/EBox/OpenChange/CGI/OpenChangeGroupOptions.pm:57
 #, fuzzy
 msgid "OpenChange account enabled"
 msgstr "konto Jabber"
 
 #: ../../main/openchange/src/EBox/OpenChange/CGI/OpenChangeUserOptions.pm:61
+#: ../../main/openchange/src/EBox/OpenChange/CGI/OpenChangeGroupOptions.pm:61
 #, fuzzy
 msgid "OpenChange account disabled"
 msgstr "konto Jabber"
@@ -6595,6 +6607,18 @@ msgstr ""
 msgid "Could not bind to AD LDAP server '{server}'. Error was '{error}'"
 msgstr ""
 
+#: ../../main/openchange/src/EBox/OpenChange/CGI/OpenChangeGroupOptions.pm:45
+#: ../../main/samba/src/EBox/Samba/CGI/EditContact.pm:110
+#: ../../main/samba/src/EBox/Samba/CGI/EditContact.pm:122
+#: ../../main/samba/src/EBox/Samba/CGI/EditUser.pm:192
+#: ../../main/samba/src/EBox/Samba/CGI/EditUser.pm:204
+#: ../../main/samba/src/EBox/Samba/CGI/ActiveSharing.pm:43
+#: ../../main/samba/src/EBox/Samba/Group.pm:225
+#: ../../main/mail/src/EBox/Mail/CGI/CreateGroupAlias.pm:42
+#: ../../main/mail/src/EBox/Mail/CGI/DelGroupAlias.pm:44
+msgid "group"
+msgstr "grupa"
+
 #: ../../main/openchange/src/EBox/OpenChange/Composite/Disclaimer.pm:46
 #, perl-brace-format
 msgid ""
@@ -6610,18 +6634,30 @@ msgstr "Zmień"
 
 #: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:58
 #: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:67
+#: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:186
 #, fuzzy
 msgid "OpenChange Account"
 msgstr "Konto współdzielenia plików"
 
-#: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:93
+#: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:86
 #, perl-brace-format
 msgid "Unknown value for {control}: {x}"
 msgstr ""
 
-#: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:160
+#: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:147
 #, fuzzy
 msgid "This user has a openchange account."
+msgstr "Ten użytkownik posiada już konto"
+
+#: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:189
+msgid ""
+"The OpenChange account is only available to groups in the default 'Groups' "
+"container"
+msgstr ""
+
+#: ../../main/openchange/src/EBox/OpenChange/LdapUser.pm:292
+#, fuzzy
+msgid "This group has a openchange account."
 msgstr "Ten użytkownik posiada już konto"
 
 #: ../../main/openchange/src/EBox/OpenChange/Model/RPCProxy.pm:52
@@ -6957,42 +6993,48 @@ msgstr "Zmień hasło"
 msgid "Error provisioning: {error}"
 msgstr "Błędne wyrażenie regularne"
 
-#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:613
+#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:638
 #, fuzzy
 msgid "Provision OpenChange"
 msgstr "Zmień"
 
-#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:614
+#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:639
 msgid ""
 "Provisioning OpenChange will trigger the commit of unsaved configuration "
 "changes"
 msgstr ""
 
-#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:615
+#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:640
 #, fuzzy
 msgid "Saving changes after provision"
 msgstr "Zapisywanie zmian w modułach"
 
-#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:661
+#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:686
 #, fuzzy
 msgid "Deprovision OpenChange"
 msgstr "Zmień"
 
-#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:662
+#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:687
 msgid ""
 "Deprovisioning OpenChange will trigger the commit of unsaved configuration "
 "changes"
 msgstr ""
 
-#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:663
+#: ../../main/openchange/src/EBox/OpenChange/Model/Provision.pm:688
 #, fuzzy
 msgid "Saving changes after deprovision"
 msgstr "Zapisywanie zmian w modułach"
 
-#: ../../main/openchange/src/EBox/OpenChange/Model/OpenChangeUser.pm:33
+#: ../../main/openchange/src/EBox/OpenChange/Model/OpenChangeUser.pm:31
 #, fuzzy
 msgid "Enable OpenChange account"
 msgstr "Konto współdzielenia plików"
+
+#: ../../main/openchange/src/EBox/OpenChange/Model/OpenChangeUser.pm:44
+msgid ""
+"This affects both new users and groups with mail account in a managed mail "
+"domain"
+msgstr ""
 
 #: ../../main/openchange/src/EBox/OpenChange.pm:121
 msgid "Enable proxy, proxy_http and headers Apache 2 modules."
@@ -7713,17 +7755,6 @@ msgstr "Webmail"
 msgid "Contact updated"
 msgstr "Pozostałe grupy"
 
-#: ../../main/samba/src/EBox/Samba/CGI/EditContact.pm:110
-#: ../../main/samba/src/EBox/Samba/CGI/EditContact.pm:122
-#: ../../main/samba/src/EBox/Samba/CGI/EditUser.pm:192
-#: ../../main/samba/src/EBox/Samba/CGI/EditUser.pm:204
-#: ../../main/samba/src/EBox/Samba/CGI/ActiveSharing.pm:43
-#: ../../main/samba/src/EBox/Samba/Group.pm:225
-#: ../../main/mail/src/EBox/Mail/CGI/CreateGroupAlias.pm:42
-#: ../../main/mail/src/EBox/Mail/CGI/DelGroupAlias.pm:44
-msgid "group"
-msgstr "grupa"
-
 #: ../../main/samba/src/EBox/Samba/CGI/AddGroup.pm:53
 msgid "group name"
 msgstr "nazwa grupy"
@@ -7818,7 +7849,7 @@ msgid "OU name"
 msgstr "Nazwa użytkownika"
 
 #: ../../main/samba/src/EBox/Samba/Composite/Settings.pm:52
-#: ../../main/samba/src/EBox/Samba.pm:1959
+#: ../../main/samba/src/EBox/Samba.pm:1960
 msgid "LDAP Settings"
 msgstr "Ustawienia LDAP"
 
@@ -7828,7 +7859,7 @@ msgid ""
 msgstr "Te opcje są używane podczas tworzenia konta nowego użytkownika."
 
 #: ../../main/samba/src/EBox/Samba/Composite/UserTemplate.pm:70
-#: ../../main/samba/src/EBox/Samba.pm:1955
+#: ../../main/samba/src/EBox/Samba.pm:1956
 msgid "User Template"
 msgstr "Szablon użytkownika"
 
@@ -7837,7 +7868,7 @@ msgid "Recycle Bin"
 msgstr "Kosz"
 
 #: ../../main/samba/src/EBox/Samba/Composite/FileSharing.pm:38
-#: ../../main/samba/src/EBox/Samba.pm:1969
+#: ../../main/samba/src/EBox/Samba.pm:1970
 msgid "File Sharing"
 msgstr "Współdzielenie plików"
 
@@ -8393,7 +8424,7 @@ msgid ""
 msgstr ""
 
 #: ../../main/samba/src/EBox/Samba/Model/Manage.pm:37
-#: ../../main/samba/src/EBox/Samba.pm:1945
+#: ../../main/samba/src/EBox/Samba.pm:1946
 #, fuzzy
 msgid "Users and Computers"
 msgstr "Użytkownicy i Grupy"
@@ -8940,31 +8971,31 @@ msgstr ""
 msgid "Found {count} results for '{name}' group, expected only one."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:1951
+#: ../../main/samba/src/EBox/Samba.pm:1952
 #, fuzzy
 msgid "Manage"
 msgstr "Tylko do odczytu"
 
-#: ../../main/samba/src/EBox/Samba.pm:1963
+#: ../../main/samba/src/EBox/Samba.pm:1964
 #, fuzzy
 msgid "Configure mode"
 msgstr "Skonfigurowano"
 
-#: ../../main/samba/src/EBox/Samba.pm:2101
+#: ../../main/samba/src/EBox/Samba.pm:2102
 #, perl-brace-format
 msgid ""
 "To be able to restore this backup the hostname should be first set to {hn}. "
 "Otherwise samba data could not be restored."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2117
+#: ../../main/samba/src/EBox/Samba.pm:2118
 #, perl-brace-format
 msgid ""
 "Cannot restore because LDAP user {user} already exists as /etc/passwd user. "
 "Delete or rename this user and try again"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2134
+#: ../../main/samba/src/EBox/Samba.pm:2135
 #, perl-brace-format
 msgid ""
 "We cannot recreate the samba provision with the data from the backup because "
@@ -8972,104 +9003,104 @@ msgid ""
 "{ex}"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2144
+#: ../../main/samba/src/EBox/Samba.pm:2145
 msgid ""
 "Restore is only possible if the server is the unique domain controller of "
 "the forest"
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2408
+#: ../../main/samba/src/EBox/Samba.pm:2409
 msgid ""
 "The hostname or domain cannot be changed if Zentyal is configured as "
 "additional domain controller."
 msgstr ""
 
-#: ../../main/samba/src/EBox/Samba.pm:2501
+#: ../../main/samba/src/EBox/Samba.pm:2502
 #, fuzzy
 msgid "Users data and Filesystem shares"
 msgstr "Wykorzystanie systemu plików"
 
-#: ../../main/samba/src/EBox/Samba.pm:2644
+#: ../../main/samba/src/EBox/Samba.pm:2645
 #, fuzzy, perl-brace-format
 msgid "Address {addr} is already in use by the {type} {name}"
 msgstr "Port {port} jest już używany przez moduł {mod}"
 
-#: ../../main/samba/src/EBox/Samba.pm:3218
-#: ../../main/samba/src/EBox/Samba.pm:3238
-#: ../../main/samba/src/EBox/Samba.pm:3249
+#: ../../main/samba/src/EBox/Samba.pm:3219
+#: ../../main/samba/src/EBox/Samba.pm:3239
+#: ../../main/samba/src/EBox/Samba.pm:3250
 msgid "Client address"
 msgstr "Adres klienta"
 
-#: ../../main/samba/src/EBox/Samba.pm:3221
+#: ../../main/samba/src/EBox/Samba.pm:3222
 msgid "Resource"
 msgstr "Zasoby"
 
-#: ../../main/samba/src/EBox/Samba.pm:3225
+#: ../../main/samba/src/EBox/Samba.pm:3226
 msgid "Connect"
 msgstr "Połącz"
 
-#: ../../main/samba/src/EBox/Samba.pm:3226
+#: ../../main/samba/src/EBox/Samba.pm:3227
 msgid "Access to directory"
 msgstr "Dostęp do folderu"
 
-#: ../../main/samba/src/EBox/Samba.pm:3227
+#: ../../main/samba/src/EBox/Samba.pm:3228
 msgid "Read file"
 msgstr "Czytaj plik"
 
-#: ../../main/samba/src/EBox/Samba.pm:3228
+#: ../../main/samba/src/EBox/Samba.pm:3229
 msgid "Write file"
 msgstr "Zapisz plik"
 
-#: ../../main/samba/src/EBox/Samba.pm:3229
+#: ../../main/samba/src/EBox/Samba.pm:3230
 msgid "Disconnect"
 msgstr "Rozłącz"
 
-#: ../../main/samba/src/EBox/Samba.pm:3230
+#: ../../main/samba/src/EBox/Samba.pm:3231
 #: ../../main/core/src/templates/ajax/viewer/file.mas:23
 #: ../../main/mail/src/templates/qmanager.mas:37
 msgid "Remove"
 msgstr "Usuń"
 
-#: ../../main/samba/src/EBox/Samba.pm:3231
+#: ../../main/samba/src/EBox/Samba.pm:3232
 msgid "Create directory"
 msgstr "Utwórz folder"
 
-#: ../../main/samba/src/EBox/Samba.pm:3232
+#: ../../main/samba/src/EBox/Samba.pm:3233
 msgid "Remove directory"
 msgstr "Usuń folder"
 
-#: ../../main/samba/src/EBox/Samba.pm:3233
+#: ../../main/samba/src/EBox/Samba.pm:3234
 msgid "Rename"
 msgstr "Zmień nazwę"
 
-#: ../../main/samba/src/EBox/Samba.pm:3240
-#: ../../main/samba/src/EBox/Samba.pm:3251
+#: ../../main/samba/src/EBox/Samba.pm:3241
+#: ../../main/samba/src/EBox/Samba.pm:3252
 msgid "File name"
 msgstr "Nazwa pliku"
 
-#: ../../main/samba/src/EBox/Samba.pm:3241
-#: ../../main/samba/src/EBox/Samba.pm:3245
+#: ../../main/samba/src/EBox/Samba.pm:3242
+#: ../../main/samba/src/EBox/Samba.pm:3246
 msgid "Virus"
 msgstr "Wirus"
 
-#: ../../main/samba/src/EBox/Samba.pm:3252
+#: ../../main/samba/src/EBox/Samba.pm:3253
 msgid "Quarantined file name"
 msgstr "Kwarantanna pliku"
 
-#: ../../main/samba/src/EBox/Samba.pm:3253
-#: ../../main/samba/src/EBox/Samba.pm:3256
+#: ../../main/samba/src/EBox/Samba.pm:3254
+#: ../../main/samba/src/EBox/Samba.pm:3257
 msgid "Quarantine"
 msgstr "Kwarantanna"
 
-#: ../../main/samba/src/EBox/Samba.pm:3259
+#: ../../main/samba/src/EBox/Samba.pm:3260
 msgid "Samba access"
 msgstr "Dostęp do Samby"
 
-#: ../../main/samba/src/EBox/Samba.pm:3270
+#: ../../main/samba/src/EBox/Samba.pm:3271
 msgid "Samba virus"
 msgstr "Samba wirus"
 
-#: ../../main/samba/src/EBox/Samba.pm:3281
+#: ../../main/samba/src/EBox/Samba.pm:3282
 msgid "Samba quarantine"
 msgstr "Kwarantanna"
 
@@ -11890,14 +11921,17 @@ msgid "Configure module: {module}"
 msgstr "Konfiguracja modułu: {module}"
 
 #: ../../main/openchange/src/templates/openchange.mas:12
+#: ../../main/openchange/src/templates/openchange_group.mas:12
 #, fuzzy
 msgid "Account status"
 msgstr "Nazwa konta"
 
 #: ../../main/openchange/src/templates/openchange.mas:27
-#, perl-brace-format
-msgid "{oc} account could not enabled until the user has an email account"
+#, fuzzy, perl-brace-format
+msgid "{oc} account could not be enabled until the user has an email account"
 msgstr ""
+"Grupowe aliasy nie moga zostać stworzone, ponieważ żaden użytkownik w grupie "
+"nie ma konta mail"
 
 #: ../../main/openchange/src/templates/migration/finish.mas:7
 #, fuzzy
@@ -12164,6 +12198,11 @@ msgstr ""
 msgid "activate mailbox"
 msgstr ""
 
+#: ../../main/openchange/src/templates/openchange_group.mas:27
+#, perl-brace-format
+msgid "{oc} account could not be enabled until the group has an email account"
+msgstr ""
+
 #: ../../main/openchange/src/templates/wizard/provision.mas:8
 msgid "Set up OpenChange Mail services"
 msgstr ""
@@ -12182,9 +12221,9 @@ msgstr "Zarządzanie certyfikatami"
 #, perl-brace-format
 msgid ""
 "Warning: These are untested community updates that might harm your system. "
-"In production environments we recommend using the {oh}Professional, Business "
-"or Premium Editions{ch}: commercial Zentyal server editions fully supported "
-"by Zentyal S.L. and Canonical/Ubuntu."
+"In production environments we recommend using the {oh}Commercial "
+"Edition{ch}: commercial Zentyal server editions fully supported by Zentyal S."
+"L. and Canonical/Ubuntu."
 msgstr ""
 
 #: ../../main/software/src/templates/welcome.mas:9
@@ -16155,12 +16194,6 @@ msgstr ""
 
 #~ msgid "RAID"
 #~ msgstr "RAID"
-
-#, fuzzy
-#~ msgid "Group aliases cannot be created because no user has mail account"
-#~ msgstr ""
-#~ "Grupowe aliasy nie moga zostać stworzone, ponieważ żaden użytkownik w "
-#~ "grupie nie ma konta mail"
 
 #, fuzzy
 #~ msgid "IPS Alerts report"

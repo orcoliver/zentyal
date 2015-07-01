@@ -1,4 +1,6 @@
-HEAD
+4.1.2
+	+ New commercial edition
+4.1.1
 	+ Use POST method when submitting forms in AJAX requests
 	+ Added missing table-helper.js dependency to treeView template
 4.1
